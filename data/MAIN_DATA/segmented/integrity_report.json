@@ -1,0 +1,776 @@
+[
+  {
+    "file": "doc_6_https___web_archive_org_web_20140202184957_http____cleaned.json",
+    "url": "https://web.archive.org/web/20140202184957/http://obs.rc.fas.harvard.edu/chetty/mobility_geo.pdf",
+    "chunk_count": 179,
+    "integrity_issues": [
+      "Đã tìm thấy 2 ngày tháng: November 22, 2013, January 12, 2012",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_16_https___en_wikipedia_org_wiki_Pittsburgh_Public_Sc_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Public_Schools",
+    "chunk_count": 9,
+    "integrity_issues": [
+      "Đã tìm thấy 45 ngày tháng: December 13, 2006, July 21, 2022, August 1, 2022, February 16, 2022, February 16, 2022, April 2, 2025, April 2, 2025, February 16, 2022, December 18, 2006, December 20, 2006, October 14, 2006, December 20, 2006, May 1, 2006, December 16, 2006, December 20, 2006, December 20, 2006, December 20, 2006, February 16, 2022, December 13, 2006, December 13, 2006, December 13, 2006, December 13, 2006, January 12, 2007, January 13, 2007, April 12, 2009, June 1, 2009, October 31, 2023, November 12, 2023, September 22, 2023, November 12, 2023, February 16, 2022, November 26, 2022, February 16, 2022, March 15, 2023, January 9, 2007, January 3, 2007, April 26, 2007, November 9, 2006, April 26, 2007, April 26, 2007, April 26, 2007, September 28, 2006, January 3, 2007, November 17, 2006, April 26, 2007",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_38_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/Fact%20Book%202022.pdf",
+    "chunk_count": 49,
+    "integrity_issues": [
+      "Đã tìm thấy 5 ngày tháng: January 1, 2019, July 1, 2017, July 1, 2017, July 1, 2017, July 1, 2017",
+      "Đã tìm thấy 1 sự kiện: Cathedral of Learning Petersen Event"
+    ]
+  },
+  {
+    "file": "doc_35_https___web_archive_org_web_20171202203212_https___cleaned.json",
+    "url": "https://web.archive.org/web/20171202203212/https://www.burrellesluce.com/top100/2007_Top_100List.pdf",
+    "chunk_count": 6,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_49_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/CDS_2022-2023%20Pittsburgh_0.pdf",
+    "chunk_count": 65,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 19, 2022, October 19, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_34_https___web_archive_org_web_20180720225524_http____cleaned.json",
+    "url": "https://web.archive.org/web/20180720225524/http://www.religioncommunicators.org/assets/documents/wilburawardsprogram2017.pdf",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_76_https___www_goodfoodpittsburgh_com__cleaned.json",
+    "url": "https://www.goodfoodpittsburgh.com/",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Đã tìm thấy 2 sự kiện: Pittsburgh Pierogi Festival, Pittsburgh Pierogi Festival"
+    ]
+  },
+  {
+    "file": "doc_55_https___web_archive_org_web_20060911202531_http____cleaned.json",
+    "url": "https://web.archive.org/web/20060911202531/http://www.pitt.edu/commencement/visitors/campus_tour.pdf",
+    "chunk_count": 9,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_15_https___en_wikipedia_org_wiki_List_of_Pittsburgh_n_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/List_of_Pittsburgh_neighborhoods",
+    "chunk_count": 2,
+    "integrity_issues": [
+      "Đã tìm thấy 3 ngày tháng: June 5, 2006, December 7, 2009, September 16, 2014",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_39_https___web_archive_org_web_20220421001139_https___cleaned.json",
+    "url": "https://web.archive.org/web/20220421001139/https://www.ir.pitt.edu/sites/default/files/assets/Fact%20Book%202022.pdf",
+    "chunk_count": 48,
+    "integrity_issues": [
+      "Đã tìm thấy 5 ngày tháng: January 1, 2019, July 1, 2017, July 1, 2017, July 1, 2017, July 1, 2017",
+      "Đã tìm thấy 1 sự kiện: Cathedral of Learning Petersen Event"
+    ]
+  },
+  {
+    "file": "doc_27_https___en_wikipedia_org_wiki_Pittsburgh_Penguins_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Penguins",
+    "chunk_count": 78,
+    "integrity_issues": [
+      "Đã tìm thấy 366 ngày tháng: February 8, 1966, September 13, 1967, September 23, 1967, October 11, 1967, October 21, 1967, May 15, 1970, January 30, 1980, December 31, 1988, April 6, 1997, September 3, 1999, December 8, 2000, December 27, 2000, July 30, 2005, January 24, 2006, October 18, 2006, March 13, 2007, June 8, 2007, April 2, 2008, February 11, 2011, June 13, 2013, July 1, 2015, December 12, 2015, June 12, 2016, October 13, 2016, February 9, 2021, November 29, 2021, December 31, 2021, November 23, 2022, April 2, 2023, June 1, 2023, February 18, 2024, April 20, 2025, January 5, 2001, November 19, 1997, February 18, 2024, January 5, 2001, December 27, 2000, October 5, 2006, January 1, 2011, October 2, 2023, June 24, 2016, April 18, 2017, April 18, 2017, May 9, 2018, May 8, 2018, June 24, 2016, January 31, 2021, January 25, 2021, January 19, 2024, June 30, 2017, May 1, 2012, February 4, 2021, March 18, 2021, August 25, 2010, June 2, 2016, April 23, 2016, September 19, 2002, March 3, 2016, April 23, 2016, April 28, 2016, April 23, 2016, September 14, 1967, May 27, 2021, November 19, 2020, June 2, 2016, April 23, 2016, October 14, 1998, July 25, 2019, July 24, 2019, January 23, 1975, May 8, 2021, May 8, 2021, December 17, 2009, February 1, 2010, May 8, 2021, March 28, 2004, March 11, 2011, May 8, 2021, July 6, 2008, June 24, 2008, June 9, 2012, June 9, 2012, June 15, 2009, November 25, 2008, October 10, 2003, June 15, 2009, November 25, 2008, June 18, 2020, March 26, 2021, December 5, 2011, May 29, 2012, March 9, 2022, March 5, 2007, March 9, 2022, December 21, 2006, March 9, 2022, January 10, 2012, May 29, 2012, July 22, 2005, March 18, 2021, April 9, 2019, April 8, 2019, April 8, 2019, April 9, 2019, March 31, 2019, April 9, 2019, January 25, 2006, February 10, 2006, January 24, 2006, January 25, 2006, July 7, 2012, September 8, 2017, April 21, 2006, November 5, 2012, September 23, 2011, February 19, 2007, June 11, 2009, February 20, 2007, June 8, 2007, May 9, 2021, May 9, 2021, June 13, 2009, June 16, 2009, July 2, 2009, October 14, 2010, October 18, 2009, December 29, 2010, February 12, 2011, February 26, 2011, March 4, 2011, April 10, 2011, April 16, 2011, April 12, 2011, April 23, 2012, June 17, 2013, June 23, 2012, June 22, 2012, June 23, 2012, June 23, 2013, June 23, 2012, June 26, 2012, June 23, 2012, June 13, 2013, May 25, 2017, May 7, 2021, May 16, 2014, May 17, 2014, May 16, 2014, July 1, 2015, December 25, 2020, February 2, 2021, December 12, 2015, December 15, 2015, June 13, 2016, December 14, 2015, December 16, 2015, December 15, 2015, January 16, 2016, January 17, 2016, January 16, 2016, May 26, 2016, March 30, 2019, January 27, 2019, June 13, 2016, June 16, 2016, June 14, 2016, October 14, 2016, January 3, 2017, January 2, 2017, June 20, 2017, August 4, 2017, June 20, 2017, May 8, 2018, May 8, 2018, May 8, 2018, April 16, 2019, April 17, 2019, April 17, 2019, August 7, 2020, September 11, 2020, August 7, 2020, February 9, 2020, February 9, 2021, February 22, 2020, January 27, 2021, February 1, 2021, February 2, 2021, February 21, 2021, February 22, 2021, May 9, 2021, May 9, 2021, May 10, 2021, April 29, 2021, April 30, 2021, April 29, 2021, May 27, 2021, June 8, 2021, May 27, 2021, November 29, 2021, November 29, 2021, January 5, 2022, January 6, 2022, May 15, 2022, May 16, 2022, November 23, 2022, April 5, 2023, April 2, 2023, April 5, 2023, April 13, 2023, April 12, 2023, June 4, 2023, June 4, 2023, August 6, 2023, August 6, 2023, March 7, 2024, March 7, 2024, April 16, 2024, April 16, 2024, August 13, 2018, May 9, 2018, May 8, 2018, May 3, 2018, January 27, 2019, January 26, 2019, November 10, 2013, December 5, 2018, August 22, 2002, August 15, 2016, June 18, 2016, May 29, 2010, June 2, 2010, May 29, 2010, September 13, 2011, March 18, 2021, September 13, 2011, April 2, 2013, April 7, 2013, April 5, 2013, April 4, 2013, April 9, 2013, April 5, 2013, April 11, 2016, February 2, 2017, January 23, 2017, June 24, 2016, January 25, 2017, January 23, 2017, October 27, 2019, October 27, 2019, October 9, 2018, December 1, 2021, February 1, 2019, December 1, 2021, December 1, 2020, December 1, 2021, December 1, 2021, October 20, 2022, October 20, 2022, November 25, 2022, November 25, 2022, May 10, 2011, December 3, 2013, September 4, 2013, July 24, 2013, January 4, 2019, September 13, 1967, March 18, 2021, November 19, 2020, August 14, 2015, August 17, 2015, August 16, 2015, August 21, 2013, September 4, 2013, February 21, 2014, October 5, 2018, May 12, 2013, November 4, 2013, July 22, 2015, June 14, 2016, June 15, 2016, May 16, 2017, January 30, 2019, January 30, 2019, May 25, 2008, October 15, 2011, June 7, 2008, November 7, 2007, October 15, 2011, June 7, 2008, August 8, 2016, June 14, 2016, May 10, 2021, May 10, 2021, May 10, 2021, April 20, 2025, April 20, 2025, February 18, 2024, February 20, 2025, January 6, 2001, October 7, 2012, March 3, 2013, November 20, 1997, November 1, 2013, March 3, 2013, February 18, 2024, February 19, 2024, February 6, 2000, November 12, 2013, June 9, 2014, April 29, 2018, April 28, 2018, June 12, 2018, April 28, 2018, February 8, 2014, April 28, 2018, November 12, 2007, February 4, 2008, June 17, 2013, April 26, 2025, June 17, 2013, April 26, 2025, February 21, 2013, August 27, 2016, March 10, 2017, March 2, 2017, March 12, 2017, March 10, 2017, October 26, 2016, March 11, 2017, October 15, 2017, January 26, 2018, December 20, 2009, July 11, 2018, January 3, 2010, April 26, 2017, July 31, 2017, May 28, 2017, May 14, 2009, May 27, 2017, June 6, 2017, May 12, 2017, June 22, 2017, June 28, 2017, March 9, 2012, December 29, 2010, May 29, 1974, March 18, 2021, November 19, 2020, March 14, 2013, October 3, 2012, April 15, 2003, October 2, 2012, September 18, 2023, September 20, 2023, September 18, 2023, September 18, 2023, September 20, 2023, September 18, 2023, September 1, 2023, September 7, 2023, September 18, 2023, October 1, 2023, September 3, 2024, September 9, 2024, August 31, 2023, August 31, 2023",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_54_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/Pittsburgh-Campus-CDS_2017-2018.pdf",
+    "chunk_count": 61,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2017, October 15, 2017, July 1, 2016, June 30, 2017, July 1, 2016, June 30, 2017, July 1, 2016, June 30, 2017, July 1, 2016, June 30, 2017",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_28_https___web_archive_org_web_20180429024134_https___cleaned.json",
+    "url": "https://web.archive.org/web/20180429024134/https://nhl.bamcontent.com/images/assets/binary/282071864/binary-file/file.pdf",
+    "chunk_count": 547,
+    "integrity_issues": [
+      "Đã tìm thấy 305 ngày tháng: August 18, 2010, August 14, 2008, August 2, 2010, August 14, 2008, March 7, 2012, June 6, 2014, June 6, 2014, June 6, 2014, June 12, 2014, June 18, 2015, June 25, 2014, July 18, 2014, August 2, 2016, August 2, 2016, March 5, 2016, July 28, 2015, March 29, 2016, March 26, 2016, May 31, 2007, June 28, 2012, August 6, 2015, April 11, 2007, June 12, 2016, June 22, 2012, July 1, 2015, July 28, 2015, March 24, 2016, March 11, 2016, July 1, 2016, June 27, 2014, July 1, 2015, August 16, 2016, April 3, 2003, April 9, 2014, April 2, 2016, March 8, 2015, July 1, 2015, July 1, 2016, July 1, 2015, July 1, 2016, April 13, 2013, April 4, 2014, July 1, 2015, May 18, 1986, April 2, 2016, July 1, 2016, July 1, 2016, April 27, 2016, March 7, 2015, August 19, 2016, March 23, 2016, November 24, 2012, March 29, 2016, March 9, 2016, March 4, 2015, April 4, 2015, April 17, 2013, June 27, 2009, June 27, 2014, June 25, 2016, June 25, 2010, June 30, 2013, June 28, 2008, July 1, 2015, July 28, 2015, June 4, 2012, April 25, 1989, March 24, 1976, March 14, 1997, March 24, 1976, March 8, 1975, April 3, 1976, March 3, 1997, March 15, 1977, March 28, 1987, April 2, 1975, April 2, 1975, April 6, 1975, March 15, 1975, March 15, 1975, March 26, 1996, March 8, 1975, March 10, 1974, June 5, 1967, February 21, 1982, October 11, 1967, March 15, 1983, May 27, 1983, October 13, 1967, June 9, 1984, February 3, 1968, April 1, 1970, June 19, 1984, April 8, 1970, October 11, 1984, April 13, 1971, May 15, 1970, April 7, 1985, January 30, 1973, January 22, 1975, June 12, 1985, February 22, 1975, May 26, 1986, June 13, 1975, December 4, 1987, July 11, 1975, June 8, 1988, March 24, 1976, December 31, 1988, December 3, 1976, April 5, 1978, April 25, 1989, January 3, 1980, June 7, 1989, January 30, 1980, December 5, 1989, December 13, 1980, January 21, 1990, June 4, 1981, February 14, 1990, March 24, 1992, May 23, 1992, June 12, 1990, May 26, 1992, December 22, 1990, March 4, 1991, March 27, 1991, June 1, 1992, April 13, 1991, June 12, 1992, January 12, 1993, April 25, 1991, March 2, 1993, May 11, 1991, April 3, 1993, April 9, 1993, May 25, 1991, June 24, 1991, October 28, 1993, August 29, 1991, August 29, 1994, February 7, 1995, October 1, 1991, October 17, 1991, February 16, 1995, May 3, 1995, October 19, 1991, November 26, 1991, May 20, 1995, January 18, 1992, October 26, 1995, April 24, 1996, May 4, 2000, January 15, 1997, January 21, 1997, October 7, 2000, January 26, 1997, November 11, 2000, February 4, 1997, March 14, 1997, November 13, 2000, December 8, 2000, March 29, 1997, December 12, 2000, April 26, 1997, December 19, 2000, May 13, 1997, December 27, 2000, October 19, 1997, December 30, 2000, November 17, 1997, November 19, 1997, March 31, 2001, March 21, 1998, May 10, 2001, October 13, 1998, July 11, 2001, June 24, 1999, June 24, 1999, February 8, 2003, October 29, 2003, February 14, 2007, June 10, 2004, July 22, 2005, July 30, 2005, October 5, 2005, March 2, 2007, December 16, 2005, January 24, 2006, March 4, 2007, April 17, 2006, May 25, 2006, October 18, 2006, November 1, 2006, March 6, 2007, March 13, 2007, April 7, 2007, December 15, 2006, January 24, 2007, May 31, 2007, December 20, 2007, February 10, 2007, December 23, 2007, April 11, 2009, January 1, 2008, May 4, 2009, May 18, 2008, May 26, 2009, June 2, 2008, June 12, 2009, June 12, 2009, June 4, 2008, October 2, 2008, June 12, 2009, October 4, 2008, June 12, 2009, June 15, 2009, October 18, 2008, September 10, 2009, October 2, 2009, December 15, 2008, November 19, 2009, February 15, 2009, February 16, 2009, February 16, 2010, February 19, 2009, March 8, 2009, April 8, 2010, January 1, 2011, April 8, 2010, March 12, 2011, June 22, 2011, April 8, 2010, November 21, 2011, April 11, 2010, January 13, 2012, May 12, 2010, April 7, 2012, June 20, 2012, July 27, 2010, August 2, 2010, August 18, 2010, September 18, 2010, July 1, 2012, September 22, 2010, January 19, 2013, October 7, 2010, April 2, 2013, March 30, 2013, October 7, 2010, October 15, 2010, April 2, 2013, November 17, 2010, June 13, 2013, December 15, 2010, July 1, 2015, August 14, 2015, July 2, 2013, November 27, 2013, September 29, 2015, January 7, 2014, December 12, 2015, April 7, 2016, April 13, 2014, May 4, 2016, June 12, 2016, June 6, 2014, June 12, 2016, June 25, 2014, November 24, 2014, June 15, 2016, November 26, 2014, June 22, 2016, December 6, 2014, September 14, 2016, March 12, 2015, March 24, 2015, October 11, 1967, March 15, 1983, January 21, 1990, November 26, 1991, March 1, 2014, June 6, 1967, June 11, 1968, June 6, 1969, June 13, 1978, June 14, 1978, June 29, 1981, June 4, 1987, June 14, 1988, June 17, 1989, June 16, 1990, June 22, 1996, June 17, 1998, July 11, 2001, July 30, 2005, March 4, 2009, March 4, 2009, March 1, 2010, March 2, 2010, July 1, 2012, July 2, 2013, July 1, 2015, July 28, 2015, September 1, 2015",
+      "Đã tìm thấy 1 sự kiện: Bill Belisle Celebration"
+    ]
+  },
+  {
+    "file": "doc_46_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/CDS_2022-2023%20Pittsburgh_23.pdf",
+    "chunk_count": 65,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 19, 2022, October 19, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022, July 1, 2021, June 30, 2022",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_79_https___www_duq_edu_about_history_cleaned.json",
+    "url": "https://www.duq.edu/about/history",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: May 27, 1911",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_58_http___groups_wfu_edu_NDT_Results_NDT_20results_20_cleaned.json",
+    "url": "http://groups.wfu.edu/NDT/Results/NDT%20results%201977-1986%20(31-40).pdf",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_43_https___web_archive_org_web_20070925225807_http____cleaned.json",
+    "url": "https://web.archive.org/web/20070925225807/http://www.umc.pitt.edu/chancellor/publications/2006ChancellorReport.pdf",
+    "chunk_count": 26,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: June 23, 2006",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_86_https___www_discovertheburgh_com__cleaned.json",
+    "url": "https://www.discovertheburgh.com/",
+    "chunk_count": 2,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_32_https___aeronav_faa_gov_d-tpp_2504_00570AD_PDF_cleaned.json",
+    "url": "https://aeronav.faa.gov/d-tpp/2504/00570AD.PDF",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_60_https___web_archive_org_web_20060831013104_http____cleaned.json",
+    "url": "https://web.archive.org/web/20060831013104/http://www.giveto.pitt.edu/news/documents/4088%20WOG-Winter03.pdf%201.pdf",
+    "chunk_count": 29,
+    "integrity_issues": [
+      "Đã tìm thấy 6 ngày tháng: June 30, 2002, February 7, 2003, November 15, 2002, September 6, 2002, October 29, 2002, August 8, 2002",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_31_https___web_archive_org_web_20081104015950_http____cleaned.json",
+    "url": "https://web.archive.org/web/20081104015950/http://www.faa.gov/about/office_org/headquarters_offices/ato/publications/bench/DOWNLOAD/pdf/PIT_2004.pdf",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_2_https___upittpress_org_wp-content_uploads_2019_01__cleaned.json",
+    "url": "https://upittpress.org/wp-content/uploads/2019/01/9780822943716exr.pdf",
+    "chunk_count": 62,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_51_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/CDS_2020-2021-Pittsburgh-Campus.pdf",
+    "chunk_count": 62,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2020, October 15, 2020, July 1, 2019, June 30, 2020, July 1, 2019, June 30, 2020, July 1, 2019, June 30, 2020, July 1, 2019, June 30, 2020",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_33_https___en_wikipedia_org_wiki_Pittsburgh_Post-Gaze_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Post-Gazette",
+    "chunk_count": 22,
+    "integrity_issues": [
+      "Đã tìm thấy 90 ngày tháng: November 2, 2018, July 29, 1786, July 30, 1833, September 10, 1842, August 2, 1927, May 17, 1992, June 16, 2018, June 26, 2020, June 15, 2018, June 23, 2020, September 24, 2014, March 8, 1844, March 4, 1844, September 8, 2006, May 11, 2014, May 10, 2014, May 22, 2020, May 11, 2014, October 25, 2013, October 27, 2013, November 14, 2011, May 31, 2016, February 12, 2014, February 22, 2014, July 8, 2017, May 8, 2018, February 2, 2023, January 6, 2023, January 20, 2023, October 18, 2023, October 18, 2023, April 19, 2024, April 6, 2023, February 8, 2010, November 29, 2014, November 18, 2014, April 8, 2009, November 29, 2014, November 18, 2014, April 1, 1957, September 7, 1964, August 29, 2019, November 6, 2021, December 18, 2018, October 29, 2019, September 15, 2006, March 10, 2007, November 12, 2021, July 19, 2020, July 20, 2019, January 13, 2021, February 27, 2020, June 14, 2018, June 15, 2018, December 18, 2018, December 17, 2018, June 14, 2018, June 15, 2018, June 14, 2018, October 23, 2018, April 15, 2019, April 19, 2019, June 6, 2020, June 6, 2020, June 21, 2002, December 21, 2014, November 18, 2014, April 8, 1992, July 8, 2020, July 8, 2020, April 15, 2019, April 19, 2019, October 1, 2012, May 21, 2013, November 16, 2014, November 18, 2014, July 20, 2018, February 14, 2019, May 4, 2020, February 19, 2024, August 14, 2024, February 18, 2019, July 2, 2020, March 31, 2006, March 12, 2007, March 1, 2007, March 31, 2007, December 2, 2017, May 28, 2007, February 16, 2011",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_53_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/2018-19-CDS-Pittsburgh-3.pdf",
+    "chunk_count": 61,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2018, October 15, 2018, July 1, 2017, June 30, 2018, July 1, 2017, June 30, 2018, July 1, 2017, June 30, 2018, July 1, 2017, June 30, 2018",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_78_https___www_nhl_com_penguins_cleaned.json",
+    "url": "https://www.nhl.com/penguins",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_1_https___en_wikipedia_org_wiki_Pittsburgh_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh",
+    "chunk_count": 121,
+    "integrity_issues": [
+      "Đã tìm thấy 442 ngày tháng: November 27, 1758, April 22, 1794, March 18, 1816, April 22, 1794, March 8, 1771, April 16, 1771, March 18, 1816, January 19, 1994, July 16, 1988, July 1, 1901, July 15, 1995, January 6, 2014, April 1, 1954, November 2, 1920, July 23, 2010, July 16, 1980, October 16, 2022, October 12, 2022, November 14, 2021, August 8, 2023, August 11, 2023, January 4, 2024, December 26, 2018, November 28, 2023, September 22, 2009, September 13, 2006, October 18, 1987, June 16, 2006, May 16, 2010, April 14, 1982, August 13, 1979, August 2, 2008, April 19, 1983, May 25, 1988, April 19, 2009, August 24, 1974, February 12, 2014, July 9, 1982, December 23, 2012, May 5, 1987, April 14, 1982, July 11, 2012, June 25, 2013, May 14, 2014, May 15, 2014, May 14, 2014, October 1, 2008, September 22, 2006, October 1, 2013, May 18, 2019, January 1, 2003, May 31, 2012, October 21, 2007, July 6, 2007, September 22, 2006, July 17, 2011, March 14, 2023, July 17, 2013, December 6, 1911, January 11, 2008, January 5, 2009, December 26, 2017, August 3, 2013, November 6, 2008, June 2, 2011, July 17, 2013, December 9, 2005, August 22, 2016, May 24, 2016, March 10, 2019, May 13, 2018, June 3, 2019, August 12, 2012, January 3, 2012, February 18, 2003, December 9, 2018, May 18, 2019, June 11, 2015, November 21, 2013, June 11, 2015, November 19, 2003, December 30, 2011, January 1, 2012, May 28, 2009, May 22, 2010, February 3, 2021, September 29, 2013, March 16, 2004, December 4, 2021, November 4, 2012, April 11, 2009, June 29, 2007, July 17, 2007, April 1, 2012, July 17, 2007, February 21, 2015, February 22, 2015, January 8, 2014, October 29, 2018, February 9, 2018, February 3, 2020, August 20, 2023, June 28, 2006, February 3, 2011, May 17, 2010, March 3, 2006, December 11, 2006, February 7, 2011, December 2, 2010, March 25, 2012, February 7, 2011, June 6, 2017, May 18, 2019, July 31, 2013, March 24, 2020, March 5, 2015, July 19, 2020, June 10, 2021, May 15, 2020, June 20, 2014, August 20, 2008, February 23, 2003, May 15, 2011, June 10, 2021, November 15, 2012, July 4, 2019, September 23, 2016, February 7, 2024, November 11, 2020, December 16, 2023, December 16, 2023, February 18, 2013, May 18, 2019, March 28, 2018, May 19, 2019, May 19, 2019, January 22, 2017, April 24, 2018, February 2, 2019, April 16, 2018, December 6, 2017, April 24, 2018, January 30, 2018, September 26, 2018, April 19, 2018, June 7, 2017, April 16, 2018, July 8, 2024, January 18, 2018, April 16, 2018, February 3, 2017, April 16, 2018, October 18, 2021, December 16, 2023, October 19, 2021, December 16, 2023, December 16, 2023, July 25, 2017, December 16, 2023, January 24, 2023, December 16, 2023, December 16, 2023, February 9, 2017, December 16, 2023, June 4, 2016, May 12, 2022, April 1, 2020, May 8, 2012, May 11, 2012, August 12, 2012, May 11, 2012, January 26, 2024, January 26, 2024, January 26, 2024, March 29, 2009, January 7, 2010, April 12, 2009, January 9, 2000, September 6, 2008, May 16, 2008, December 10, 2012, April 12, 2018, August 17, 2013, February 17, 2022, January 23, 2013, December 1, 2022, December 1, 2022, December 1, 2022, December 22, 2023, December 27, 2017, December 16, 2023, April 5, 2022, December 16, 2023, January 8, 2018, December 16, 2023, November 3, 2020, December 21, 2019, December 22, 2019, October 15, 2023, October 18, 2023, October 18, 2023, March 27, 2014, December 16, 2010, December 21, 2010, February 2, 2014, January 27, 2014, January 24, 2014, January 27, 2014, January 27, 2014, December 8, 2010, December 8, 2010, December 8, 2010, June 4, 2011, June 3, 2011, February 21, 2013, July 17, 2013, December 5, 2010, December 8, 2010, October 10, 2006, April 14, 2007, May 23, 2022, June 11, 2022, May 24, 2022, June 11, 2022, February 6, 2013, July 17, 2013, September 24, 2015, June 11, 2015, October 20, 2012, October 27, 2012, December 6, 2009, August 16, 2010, November 9, 2010, March 15, 2011, June 19, 2005, August 7, 2012, March 4, 2012, February 29, 2012, February 28, 2012, December 7, 2012, March 4, 2012, February 28, 2012, January 10, 2014, October 6, 2022, March 1, 2023, February 11, 2015, March 1, 2023, October 22, 1966, March 8, 2024, February 10, 2011, January 14, 2012, August 6, 2020, November 13, 2019, June 16, 2016, September 29, 2021, July 9, 2019, September 29, 2021, July 11, 2011, March 10, 2021, March 10, 2021, September 26, 2000, May 9, 2021, March 10, 2021, January 9, 2001, May 9, 2021, March 10, 2021, January 3, 2001, May 9, 2021, March 10, 2021, October 3, 2000, May 9, 2021, March 10, 2021, February 3, 2016, March 10, 2021, April 16, 2014, March 10, 2021, October 14, 2020, March 10, 2021, October 1, 2020, March 10, 2021, February 20, 2025, May 10, 2025, May 10, 2025, December 16, 2023, June 11, 2010, January 14, 2012, January 17, 2023, December 16, 2006, December 4, 2021, October 11, 1998, January 18, 2022, December 4, 2021, January 5, 2009, January 5, 2009, November 5, 2006, May 12, 2008, January 5, 2009, May 12, 2008, January 5, 2009, January 1, 2010, May 24, 2016, October 25, 2007, January 5, 2009, May 27, 2005, April 20, 1999, January 5, 2009, January 5, 2009, February 24, 2019, March 31, 2023, November 1, 2023, October 19, 2018, March 17, 2006, January 9, 2007, August 14, 2007, August 14, 2007, November 16, 2015, May 17, 2010, May 20, 2010, December 4, 2021, September 15, 2005, December 4, 2021, March 17, 2011, March 17, 2011, December 13, 2022, November 21, 2012, June 11, 2015, July 16, 2019, August 20, 2016, July 16, 2019, July 16, 2019, August 14, 2006, November 12, 2007, August 14, 2006, February 11, 2015, June 11, 2015, July 17, 2018, October 9, 2020, August 30, 2008, October 8, 2008, August 30, 2008, November 21, 2023, August 20, 2010, August 23, 2010, August 20, 2010, November 30, 2015, February 6, 2016, June 14, 2022, January 20, 2025, June 28, 2024, June 5, 2009, January 4, 2025, March 8, 2018, February 27, 2021, March 21, 2024, July 12, 1990, April 19, 2022, June 19, 2010, May 6, 2009, December 18, 2013, August 8, 2012, September 23, 2010, October 12, 2010, January 16, 2016, December 16, 2023, April 27, 2023, December 16, 2023, December 13, 2023, December 16, 2023, December 16, 2023, January 2, 2014, August 30, 2007, January 11, 2009, May 23, 2008, November 10, 2006, April 29, 2008, January 14, 2008, April 29, 2008, April 5, 2007, January 11, 2009, March 24, 2008, April 26, 2019, May 29, 2007, October 21, 2007, March 6, 2010, April 19, 2022, January 20, 2017, August 23, 2006, January 26, 2008, March 28, 2004, December 4, 2021, February 11, 2015, December 4, 2021, March 2, 2008, December 4, 2021, September 1, 2013, May 24, 2016, January 5, 2017, January 5, 2017, October 21, 2022, November 14, 2023, December 26, 2020, February 6, 2014, January 20, 2025, July 25, 2022, May 16, 2010, November 19, 2010, June 11, 2015, August 1, 2007, June 11, 2015, February 23, 2012, June 11, 2015, June 11, 2015, May 24, 2016, June 11, 2015, December 15, 1995, May 24, 2016, July 22, 2012, February 5, 2016, May 24, 2016, July 5, 2012, June 11, 2015, June 11, 2015, June 11, 2015, January 12, 2016, February 5, 2016, February 7, 2013, June 11, 2015, June 16, 2006, November 21, 2009, July 8, 2009, July 7, 2011, April 6, 2010, April 5, 2024, June 19, 2017, June 11, 2015, September 27, 2007, July 6, 2007, October 14, 2008, January 5, 2009, May 19, 2021, March 9, 2022, July 1, 2022",
+      "Đã tìm thấy 12 sự kiện: Three Rivers Film Festival, Downtown s cultural district hosts quarterly Gallery Crawls and the annual Three Rivers Arts Festival, The Pittsburgh New Works Festival, Notable film festivals include the Three Rivers Film Festival, Pittsburgh Shorts Film Festival, JFilm Festival, ReelAbilities Film Festival, Black Bottom Film Festival, Pittsburgh Firsts By Event, Pittsburgh New Works Festival, Pittsburgh Shorts Film Festival, Pittsburgh Firsts By Event"
+    ]
+  },
+  {
+    "file": "doc_12_https___en_wikipedia_org_wiki_Sports_in_Pittsburgh_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Sports_in_Pittsburgh",
+    "chunk_count": 52,
+    "integrity_issues": [
+      "Đã tìm thấy 102 ngày tháng: April 15, 1876, April 29, 1932, February 24, 1967, November 12, 1892, December 3, 1898, April 21, 2008, January 10, 2009, November 10, 2008, January 8, 2009, June 3, 2004, January 8, 2009, November 19, 1935, February 28, 2008, May 15, 2008, January 20, 1991, July 1, 2009, August 25, 2005, January 7, 2009, January 8, 2009, February 9, 2008, January 9, 2009, July 24, 2013, July 17, 2013, January 7, 2009, June 29, 2009, January 7, 2009, January 7, 2009, January 7, 2009, January 7, 2009, December 17, 2008, January 6, 2009, January 7, 2009, January 7, 2009, January 7, 2009, April 27, 2008, May 28, 2008, April 27, 2008, January 7, 2009, August 22, 2008, January 8, 2009, February 16, 2006, February 9, 2009, January 8, 2009, August 30, 2008, August 30, 2008, August 29, 2008, August 30, 2008, November 21, 2008, January 8, 2009, August 20, 2010, August 23, 2010, August 20, 2010, January 10, 2009, April 8, 2009, January 10, 2009, June 30, 2005, January 10, 2009, November 22, 2021, December 19, 2021, July 9, 2008, July 9, 2008, December 31, 2011, January 31, 2023, September 20, 2020, September 19, 2008, October 4, 2008, January 9, 2009, January 10, 2021, March 20, 2015, July 17, 2013, November 21, 2023, November 21, 2023, March 17, 2008, January 9, 2009, January 9, 2009, January 9, 2009, January 9, 2009, July 20, 2012, July 9, 2012, March 2, 2009, January 9, 2009, January 8, 2009, January 8, 2009, January 8, 2009, January 8, 2009, January 8, 2009, January 9, 2009, January 9, 2009, January 9, 2009, January 9, 2009, October 22, 2006, January 9, 2009, January 9, 2009, January 11, 2010, January 9, 2009, January 9, 2009, January 9, 2009, January 9, 2009, January 24, 2009, January 9, 2009, January 20, 1991, July 1, 2009",
+      "Đã tìm thấy 1 sự kiện: Major events edit Event"
+    ]
+  },
+  {
+    "file": "doc_75_https___www_pittsburghmagazine_com_best-restaurant_cleaned.json",
+    "url": "https://www.pittsburghmagazine.com/best-restaurants/",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: August 10, 2012",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_30_https___web_archive_org_web_20160304091955_http____cleaned.json",
+    "url": "https://web.archive.org/web/20160304091955/http://www.flypittsburgh.com/UserFiles/File/stats/PCH.pdf",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_37_https___en_wikipedia_org_wiki_University_of_Pittsb_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/University_of_Pittsburgh",
+    "chunk_count": 109,
+    "integrity_issues": [
+      "Đã tìm thấy 668 ngày tháng: February 28, 1787, November 2, 1979, February 28, 1787, August 1, 2014, April 5, 2016, May 2, 2022, February 2, 2019, March 30, 2019, December 14, 2015, June 30, 2020, February 19, 2021, May 27, 2022, February 19, 2021, July 10, 2019, July 26, 2020, July 26, 2020, April 21, 2022, May 26, 2022, November 7, 2021, November 7, 2021, February 9, 2022, July 27, 2024, March 21, 2016, January 25, 2014, July 26, 2022, July 15, 2008, October 29, 2012, December 21, 2009, September 8, 2012, December 22, 2009, September 22, 2012, June 27, 2011, March 18, 2015, April 15, 2017, September 8, 2012, April 28, 2008, September 8, 2012, April 28, 2008, November 1, 1912, January 20, 2010, September 6, 2008, September 6, 2009, July 28, 2003, April 28, 2008, July 28, 2003, April 28, 2008, July 28, 2003, April 28, 2008, September 8, 2012, April 28, 2008, April 8, 2008, April 28, 2008, February 15, 2005, April 28, 2008, July 25, 2008, April 28, 2008, October 13, 2016, October 13, 2016, January 24, 2007, October 17, 2007, December 12, 2008, April 28, 2008, May 17, 2007, June 10, 2007, June 21, 2007, April 3, 2014, April 6, 2014, March 11, 2008, April 28, 2008, October 24, 2002, July 20, 2011, April 28, 2008, July 26, 2022, August 26, 2013, December 17, 2013, April 28, 2008, October 7, 2011, September 6, 2008, February 25, 2012, September 7, 2009, November 7, 2007, September 7, 2009, June 6, 2011, September 7, 2009, June 6, 2011, September 7, 2009, June 6, 2011, September 7, 2009, October 7, 2011, September 6, 2009, January 27, 2007, January 27, 2007, February 25, 2008, June 27, 2007, July 21, 2011, February 25, 2008, January 23, 1997, July 20, 2011, October 10, 2010, September 29, 2014, August 26, 2013, May 15, 2013, August 26, 2013, May 31, 2013, August 26, 2013, February 20, 2008, April 21, 2008, April 28, 2008, January 30, 2006, October 3, 2011, April 30, 2008, June 15, 2010, April 28, 2008, January 11, 2010, January 11, 2010, August 16, 2013, August 26, 2013, October 17, 2008, August 26, 2013, July 11, 2008, February 4, 2009, March 14, 2009, August 28, 2018, August 26, 2013, July 10, 2011, December 19, 2010, August 31, 2006, October 9, 2011, June 26, 2011, July 12, 2013, April 3, 2015, August 20, 2013, October 12, 2009, June 12, 2010, October 18, 2009, June 23, 2006, September 25, 2007, April 29, 2008, September 6, 2009, April 3, 2013, August 20, 2013, January 25, 2007, October 9, 2011, April 29, 2008, September 30, 2007, January 15, 2009, April 29, 2008, January 16, 2008, September 6, 2009, August 2, 2009, October 24, 2019, August 2, 2009, October 24, 2019, October 23, 2019, January 9, 2020, April 29, 2020, January 10, 2020, April 29, 2020, February 24, 2021, October 23, 2019, September 11, 2014, March 9, 2021, October 23, 2019, April 27, 2020, April 29, 2020, January 8, 2020, October 23, 2019, July 11, 2020, July 13, 2020, June 7, 2018, July 13, 2020, July 13, 2020, July 26, 2018, October 24, 2019, October 23, 2019, February 28, 2020, February 28, 2021, June 17, 2021, March 18, 2022, March 21, 2022, May 10, 2022, June 24, 2021, June 17, 2021, October 24, 2019, October 24, 2019, September 18, 2020, October 24, 2019, February 24, 2016, June 18, 2021, June 17, 2021, July 29, 2019, October 24, 2019, October 24, 2019, April 2, 2019, October 24, 2019, October 24, 2019, February 4, 2022, February 4, 2022, June 30, 2020, February 4, 2022, February 4, 2022, April 3, 2019, October 24, 2019, September 12, 2019, June 26, 2020, July 13, 2020, July 13, 2020, June 24, 2021, June 17, 2021, July 8, 2011, September 20, 2014, January 26, 2013, July 10, 2008, April 3, 2015, September 25, 2014, September 4, 2009, September 6, 2009, April 22, 2008, April 29, 2008, December 25, 2008, February 11, 2009, August 6, 2008, July 20, 2011, August 6, 2008, June 20, 2017, June 16, 2017, June 16, 2017, December 24, 2022, August 31, 2023, December 16, 2022, September 10, 2022, December 16, 2022, April 7, 2025, April 7, 2025, December 16, 2022, April 7, 2025, December 16, 2022, December 16, 2022, December 16, 2022, December 16, 2022, April 20, 2008, April 29, 2008, January 14, 2008, April 29, 2008, August 24, 2010, January 17, 2012, August 25, 2010, August 1, 2007, February 21, 2008, April 29, 2008, March 8, 2021, April 29, 2008, July 15, 2013, August 14, 2013, August 31, 2006, March 19, 2008, April 29, 2008, May 3, 2007, April 15, 2008, April 29, 2008, April 28, 2008, April 29, 2008, September 24, 2010, August 25, 2010, September 25, 2010, August 25, 2010, June 23, 2005, July 20, 2011, August 25, 2010, June 27, 2010, August 25, 2010, August 24, 2010, January 17, 2012, August 25, 2010, April 1, 2013, August 8, 2014, July 30, 2014, May 18, 2011, August 8, 2014, July 30, 2014, September 6, 2024, September 10, 2024, September 23, 2024, November 22, 2024, August 25, 2024, August 29, 2024, September 4, 2024, September 6, 2024, August 15, 2024, August 21, 2024, June 4, 2024, August 9, 2024, September 27, 2023, August 9, 2024, June 24, 2024, August 9, 2024, September 11, 2022, December 5, 2024, March 13, 2025, March 13, 2025, March 13, 2025, March 5, 2025, March 13, 2025, May 6, 2017, April 22, 2017, November 22, 2016, November 1, 2009, September 11, 2022, April 3, 2013, June 20, 2013, August 26, 2013, June 28, 2010, January 17, 2012, July 1, 2010, November 21, 2011, November 22, 2011, December 1, 2011, November 22, 2009, November 25, 2009, November 22, 2009, February 16, 2009, May 18, 2012, February 16, 2009, June 12, 2014, June 25, 2014, June 13, 2014, June 28, 2010, January 17, 2012, July 1, 2010, April 3, 2008, June 18, 2010, April 4, 2008, April 15, 2010, July 20, 2011, July 1, 2010, November 21, 2011, January 17, 2012, December 1, 2011, November 19, 2006, February 16, 2012, April 29, 2008, December 28, 2023, January 6, 2023, December 28, 2023, January 11, 2010, August 24, 2009, October 21, 2014, December 10, 2014, December 7, 2014, July 16, 2013, July 17, 2013, July 16, 2013, March 29, 2012, April 6, 2013, May 21, 2012, January 19, 2012, July 17, 2013, December 5, 2011, December 2, 2011, July 27, 2020, December 2, 2011, January 19, 2012, December 2, 2011, June 15, 2022, May 8, 2022, September 11, 2006, April 29, 2008, October 1, 2005, March 25, 2022, April 29, 2008, April 29, 2008, February 21, 2005, May 18, 2012, April 29, 2008, June 30, 2008, August 28, 2008, August 15, 2008, September 30, 2011, July 23, 2013, April 28, 2012, August 8, 2014, July 30, 2014, March 16, 2006, July 4, 2008, April 29, 2008, April 7, 2003, September 6, 2009, June 11, 2007, April 29, 2008, November 30, 2012, August 8, 2014, July 30, 2014, August 20, 2006, August 22, 2006, May 1, 2008, September 18, 2002, September 6, 2009, September 11, 2003, July 20, 2011, June 26, 2011, September 6, 2002, September 6, 2009, July 28, 2013, July 13, 2008, October 20, 2008, April 29, 2008, August 19, 2008, December 29, 2008, September 6, 2009, March 30, 2004, September 6, 2009, March 19, 2004, June 11, 2007, April 29, 2008, April 9, 2008, April 19, 2008, April 29, 2008, April 24, 2008, July 20, 2011, April 29, 2008, May 11, 2008, June 8, 2008, October 1, 2009, November 21, 2009, October 13, 2009, February 17, 2008, May 2, 2008, April 29, 2008, December 8, 2009, July 15, 2011, January 12, 2011, May 16, 2008, April 29, 2008, February 2, 2020, April 1, 2020, April 23, 2008, June 8, 2008, November 28, 1986, February 28, 2021, July 2, 2010, September 21, 2008, April 29, 2008, April 30, 2019, August 12, 2015, October 29, 2020, November 19, 2015, October 6, 2011, October 25, 2011, December 11, 2013, December 7, 2013, April 22, 2008, June 8, 2008, July 21, 2013, August 14, 2013, May 9, 2008, June 8, 2008, September 29, 2013, August 26, 2013, September 2, 2011, November 19, 2009, September 5, 2013, August 26, 2013, February 28, 2012, August 26, 2013, January 31, 2020, June 9, 2014, October 14, 2012, August 26, 2013, August 21, 2013, August 26, 2013, July 25, 2008, August 27, 2008, March 13, 2009, February 17, 2009, January 2, 2015, December 30, 2014, February 27, 2009, February 27, 2009, March 1, 2017, July 24, 2020, July 24, 2020, May 9, 2016, August 29, 2017, March 13, 2017, August 6, 2017, March 13, 2017, April 26, 2017, March 13, 2017, August 11, 2016, March 21, 2017, March 13, 2017, July 14, 2017, March 13, 2017, March 5, 2009, February 16, 2009, October 4, 2010, October 10, 2010, March 2, 2010, March 9, 2010, August 27, 2013, March 26, 2009, April 3, 2015, August 27, 2013, April 10, 2008, April 3, 2015, August 27, 2013, January 23, 2006, September 5, 2006, April 29, 2008, February 5, 1915, April 16, 2017, February 28, 2017, December 16, 2012, April 29, 2008, April 28, 2010, January 14, 2013, July 16, 2008, July 20, 2011, October 13, 2008, October 29, 2013, October 23, 2013, December 11, 2008, January 12, 2009, April 30, 2019, March 3, 2022, May 15, 2008, July 28, 2008, July 20, 2011, April 29, 2008, May 28, 2010, May 10, 2010, April 9, 2008, February 28, 2008, February 20, 2008, February 28, 2008, April 2, 2008, March 29, 2008, April 29, 2008, April 29, 2024, September 20, 2024, May 3, 2024, May 7, 2024, September 20, 2024, April 24, 2024, September 20, 2024, June 5, 2024, June 5, 2024, September 20, 2024, August 16, 2024, August 16, 2024, September 20, 2024, September 4, 2024, September 20, 2024, April 15, 2013, August 26, 2013, July 15, 2011, August 26, 2013, July 2, 2023, July 2, 2023, September 29, 2008, August 26, 2013, February 5, 2013, May 11, 2013, March 4, 2013, September 19, 2014, August 26, 2013, March 16, 2010, May 25, 2010, July 1, 2010, June 3, 2010, June 20, 2010, July 1, 2010, July 22, 2010, January 29, 2012, July 22, 2010, December 21, 2006, June 6, 2008, August 20, 2009, December 14, 2006, January 26, 2012, August 20, 2009, January 11, 2008, January 14, 2008, August 27, 2013, October 10, 2012, October 8, 2010, April 8, 2015, January 31, 2013, September 24, 2015, August 26, 2013, April 12, 2004, April 3, 2015, August 27, 2013, August 27, 2013, August 27, 2013, August 31, 2006, August 27, 2013, March 11, 2007, April 29, 2008, May 23, 2011, August 27, 2013, June 2, 2013, August 26, 2013, October 21, 2012, August 26, 2013, April 15, 2019, March 19, 2019, April 14, 2008, April 29, 2008, April 14, 2008, April 29, 2008, June 21, 2007, April 8, 2008, April 29, 2008, April 14, 2008, April 29, 2008, April 14, 2008, April 29, 2008, May 13, 2013, November 11, 2013, May 13, 2013, May 13, 2008, April 29, 2008, April 8, 2008, April 29, 2008, August 30, 2001, December 9, 2014, August 1, 2013, June 29, 2019, June 29, 2019, June 29, 2019, June 29, 2019, June 29, 2019, June 29, 2019, October 8, 2013, August 28, 2013, September 27, 2013, August 28, 2013, August 25, 2013, August 28, 2013, January 17, 2007, February 1, 2014, August 21, 2007, November 26, 1951, August 6, 2009, April 27, 2008, August 29, 2008, December 1, 2008, August 29, 2008, March 9, 1981, February 9, 2002, February 11, 2003, May 4, 2010, November 26, 1984, July 26, 2022, May 7, 2010, September 27, 2001, February 24, 2013, August 28, 2013, October 15, 2013, August 28, 2013, August 6, 2013, August 28, 2013, August 31, 2009, August 28, 2013, March 4, 2016, August 28, 2013, 25 May 1928",
+      "Đã tìm thấy 1 sự kiện: The Celebration"
+    ]
+  },
+  {
+    "file": "doc_59_https___web_archive_org_web_20080409203135_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080409203135/http://groups.wfu.edu/NDT/Results/NDT%20results%201977-1986%20(31-40).pdf",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_7_https___aeg_memberclicks_net_assets_docs_Geology_2_cleaned.json",
+    "url": "https://aeg.memberclicks.net/assets/docs/Geology%20of%20Pittsburgh%20Book.pdf",
+    "chunk_count": 208,
+    "integrity_issues": [
+      "Đã tìm thấy 36 ngày tháng: March 13, 1993, September 17, 2004, September 8, 2004, September 25, 1998, December 22, 1942, March 20, 1941, April 19, 1852, May 31, 1889, May 31, 1889, May 28, 1870, September 30, 1971, November 25, 1758, July 10, 2008, January 15, 2009, March 18, 1936, April 14, 2014, March 26, 2012, October 6, 2014, October 6, 2014, February 4, 1960, May 2, 2014, February 24, 2011, September 25, 1998, August 1, 2001, May 2, 2012, April 15, 2014, September 25, 2013, May 23, 2015, October 6, 2014, October 6, 2014, November 6, 2008, November 17, 2014, October 4, 2012, July 15, 1989, July 23, 1921, September 27, 2012",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_56_https___web_archive_org_web_20090305002146_http____cleaned.json",
+    "url": "https://web.archive.org/web/20090305002146/http://www.pitt.edu/%7Eoafa/pdf/oafa_prospectus_web_09.pdf",
+    "chunk_count": 110,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_41_https___web_archive_org_web_20161013224703_http____cleaned.json",
+    "url": "https://web.archive.org/web/20161013224703/http://www.cfo.pitt.edu/documents/FinancialReportFY2016.pdf",
+    "chunk_count": 54,
+    "integrity_issues": [
+      "Đã tìm thấy 56 ngày tháng: June 30, 2016, June 30, 2016, September 22, 2016, February 28, 1787, February 18, 1819, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, December 15, 2018, June 30, 2016, December 15, 2017, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2014, June 30, 2015, June 30, 2016, June 30, 2016, June 30, 2015, June 30, 2016, June 30, 2016, June 30, 2016, August 2, 2016, July 22, 2015, August 2, 2016, August 2, 2016, August 15, 2017, June 30, 2016, October 25, 2016, September 18, 2014, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, June 30, 2016, January 1, 1995, November 3, 2015, November 3, 2015, June 30, 2016, June 30, 2016, October 21, 1999, June 30, 2016, June 30, 2014, June 30, 2015, June 30, 2016, July 1, 2014, June 30, 2016, June 30, 2016, June 30, 2016, September 22, 2016",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_67_https___web_archive_org_web_20190629152515_https___cleaned.json",
+    "url": "https://web.archive.org/web/20190629152515/https://pre.ir.pitt.edu/wp-content/uploads/2018/12/Fact-Book-2019.pdf",
+    "chunk_count": 53,
+    "integrity_issues": [
+      "Đã tìm thấy 4 ngày tháng: July 1, 2017, July 1, 2017, July 1, 2017, July 1, 2017",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_77_https___www_steelers_com__cleaned.json",
+    "url": "https://www.steelers.com/",
+    "chunk_count": 8,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: September 28, 2025",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_29_https___en_wikipedia_org_wiki_Pittsburgh_Internati_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_International_Airport",
+    "chunk_count": 47,
+    "integrity_issues": [
+      "Đã tìm thấy 130 ngày tháng: May 31, 1952, December 6, 2025, December 20, 2025, April 17, 2025, February 13, 2025, October 20, 2015, April 17, 2025, August 30, 2024, November 12, 1991, May 7, 2023, November 11, 2007, July 12, 2009, April 16, 2019, May 19, 1981, August 16, 2022, February 10, 1981, August 12, 1981, August 16, 2022, January 20, 1985, August 16, 2022, May 3, 1985, July 23, 2023, May 7, 1985, August 16, 2022, May 11, 1985, January 5, 1990, June 17, 1990, August 18, 2022, September 30, 2012, July 5, 2013, September 13, 2004, August 18, 2022, August 13, 2004, August 18, 2022, August 13, 2004, December 9, 2003, October 3, 2007, November 7, 2011, June 2, 2009, September 26, 2017, August 18, 2022, December 17, 2011, February 21, 2017, February 21, 2017, January 18, 2019, July 23, 2023, April 16, 2019, November 15, 2017, September 21, 2019, March 27, 2019, September 12, 2017, July 18, 2024, July 18, 2024, November 4, 2008, July 12, 2009, October 11, 2014, November 7, 2011, November 3, 2015, January 31, 2024, July 13, 2009, July 12, 2009, July 16, 2022, March 19, 2023, March 19, 2023, November 25, 2023, March 25, 2009, June 6, 2009, July 12, 2009, July 21, 2012, February 17, 2010, November 15, 2007, September 28, 2011, November 20, 2011, June 12, 2009, April 7, 2012, November 20, 2011, June 4, 2008, September 28, 2011, November 20, 2011, January 7, 2017, April 6, 2020, December 17, 2024, December 17, 2024, March 26, 2025, March 26, 2025, December 4, 2024, February 5, 2025, February 5, 2025, January 10, 2024, January 10, 2024, May 21, 2021, June 21, 2024, June 21, 2024, December 5, 2024, May 2, 2025, June 18, 2019, November 2, 2023, November 2, 2023, November 2, 2023, January 15, 2025, July 13, 2013, June 14, 2021, January 7, 2017, July 26, 2024, March 25, 2021, October 31, 2023, November 10, 2018, January 29, 2017, December 23, 2024, January 28, 2017, January 7, 2017, April 28, 2025, April 28, 2025, June 21, 2024, January 31, 2013, May 29, 2008, March 9, 2012, October 24, 2013, October 24, 2013, October 17, 2015, April 28, 2021, May 12, 2015, September 12, 2015, September 21, 2012, November 15, 2011, January 27, 2022, November 8, 2021, April 17, 2025, 31 May 1952, 20 May 2005",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_63_https___web_archive_org_web_20080414064549_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080414064549/http://grfx.cstv.com/photos/schools/pitt/sports/m-track/auto_pdf/06-07-mg-part1.pdf",
+    "chunk_count": 169,
+    "integrity_issues": [
+      "Đã tìm thấy 63 ngày tháng: May 9, 1985, September 22, 1984, January 20, 1984, July 9, 1984, March 22, 1985, March 25, 1985, September 9, 1985, July 17, 1984, July 19, 1985, March 24, 1987, September 17, 1986, March 22, 1987, December 6, 1986, July 17, 1987, May 6, 1987, July 8, 1987, April 6, 1987, October 7, 1988, May 29, 1988, April 4, 1988, January 3, 1988, November 24, 1987, March 26, 1988, March 20, 1988, June 25, 1987, June 19, 1988, March 31, 1984, February 23, 1985, January 2, 1985, December 12, 1984, June 22, 1986, October 29, 1985, March 11, 1986, March 11, 1986, July 15, 1985, January 15, 1986, August 18, 1984, March 31, 1986, May 16, 1986, June 13, 1987, December 7, 1986, January 23, 1987, March 17, 1987, August 19, 1986, March 26, 1985, March 28, 1987, September 24, 1986, October 4, 1986, September 1, 1986, January 1, 1986, January 26, 1987, May 11, 1987, March 13, 1988, October 5, 1988, July 10, 1988, December 26, 1988, October 25, 1987, October 28, 1987, August 8, 1987, December 5, 1987, December 15, 1987, September 11, 1988, May 24, 1988",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_68_https___web_archive_org_web_20160304094015_http____cleaned.json",
+    "url": "https://web.archive.org/web/20160304094015/http://grfx.cstv.com/photos/schools/pitt/sports/m-track/auto_pdf/2009-10MediaGuide.pdf",
+    "chunk_count": 156,
+    "integrity_issues": [
+      "Đã tìm thấy 60 ngày tháng: June 18, 1988, June 30, 1988, March 20, 1988, July 8, 1987, May 6, 1987, October 18, 1986, October 31, 1988, May 27, 1989, January 3, 1987, August 25, 1989, December 19, 2008, April 4, 1990, March 3, 1989, June 6, 1990, September 25, 1989, April 7, 1991, January 13, 1990, July 26, 1989, April 14, 1989, May 23, 1990, January 13, 1990, June 28, 1990, June 22, 1990, March 13, 1988, December 26, 1988, August 8, 1987, October 28, 1987, December 15, 1987, August 20, 1989, April 23, 1989, October 12, 1988, September 5, 1988, January 13, 1989, January 13, 1989, June 24, 1988, August 27, 1989, February 2, 1989, May 25, 1989, March 18, 1989, June 12, 1988, May 3, 1989, December 1, 1989, April 9, 1990, February 27, 1990, October 16, 1990, June 16, 1989, September 10, 1990, September 20, 1990, November 3, 1990, August 26, 1990, July 27, 1991, July 11, 1991, June 13, 1991, June 17, 1991, August 17, 1991, January 5, 1991, January 17, 1991, March 11, 1991, March 18, 1991, September 27, 1991",
+      "Đã tìm thấy 1 sự kiện: Field Event"
+    ]
+  },
+  {
+    "file": "doc_72_https___web_archive_org_web_20160327135452_http____cleaned.json",
+    "url": "https://web.archive.org/web/20160327135452/http://www.portauthority.org/paac/Portals/0/2016FareProposal/FP%20FACT%20SHEET.pdf",
+    "chunk_count": 5,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_74_https___www_allrecipes_com_what-is-pittsburgh-sala_cleaned.json",
+    "url": "https://www.allrecipes.com/what-is-pittsburgh-salad-8679005",
+    "chunk_count": 4,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: July 19, 2024",
+      "Đã tìm thấy 1 sự kiện: Ratings Wisconsin Supper Clubs Are the Midwest s Best Kept Secret This Texas Secret Makes Your Salsa Taste So Freaking Good Meet Spiedies The Sandwich So Good It Has an Entire Festival"
+    ]
+  },
+  {
+    "file": "doc_17_https___en_wikipedia_org_wiki_Economy_of_Pittsburg_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Economy_of_Pittsburgh",
+    "chunk_count": 27,
+    "integrity_issues": [
+      "Đã tìm thấy 90 ngày tháng: September 8, 2009, April 21, 1903, October 1, 1984, May 24, 1986, April 4, 1905, October 15, 1982, August 13, 2013, September 8, 2009, January 5, 2009, August 12, 2016, December 28, 2009, April 14, 2010, March 18, 2008, August 12, 2016, August 12, 2016, February 10, 2014, February 13, 2010, August 12, 2016, February 10, 2014, February 5, 1987, February 10, 2014, May 19, 2011, February 10, 2014, August 12, 2016, August 12, 2016, August 12, 2016, March 9, 2016, February 10, 2014, October 31, 1982, August 12, 2016, August 12, 2016, August 12, 2016, August 12, 2016, April 9, 2017, November 6, 2008, August 12, 2016, August 12, 2016, August 12, 2016, May 13, 2013, April 9, 2017, April 15, 2010, November 2, 2013, November 4, 2013, November 2, 2013, November 4, 2013, April 9, 2017, August 12, 2016, August 12, 2016, August 12, 2016, August 12, 2016, August 12, 2016, August 12, 2016, September 14, 2016, August 12, 2016, December 13, 2009, October 8, 2015, February 17, 2013, June 28, 2009, November 22, 2009, April 14, 2010, December 30, 2011, January 1, 2012, February 10, 2014, February 10, 2014, February 10, 2014, January 7, 2009, November 17, 2009, November 17, 2009, December 7, 2008, April 9, 2017, April 16, 2014, December 9, 2017, October 25, 2010, December 13, 2009, November 6, 2010, November 6, 2010, February 2, 2014, January 27, 2014, January 24, 2014, January 27, 2014, January 27, 2014, March 29, 2013, March 29, 2013, March 29, 2013, March 29, 2013, August 13, 2013, August 13, 2013, August 12, 2016, September 17, 2009, August 22, 2009",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_48_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/2023-2024%20Common%20Data%20Set%20Pgh%20Campus_10.pdf",
+    "chunk_count": 74,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2023, October 15, 2023, July 1, 2022, June 30, 2023, July 1, 2022, June 30, 2023, July 1, 2022, June 30, 2023, July 1, 2022, June 30, 2023",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_71_https___web_archive_org_web_20110725202935_http____cleaned.json",
+    "url": "https://web.archive.org/web/20110725202935/http://www.cranberrytownship.org/archives/34/newsaug2000.pdf",
+    "chunk_count": 32,
+    "integrity_issues": [
+      "Đã tìm thấy 17 ngày tháng: August 1, 2000, September 30, 2000, November 30, 2000, December 31, 2000, September 30, 2000, September 11, 2000, September 10, 2000, August 1, 2000, July 1, 1979, August 24, 2000, August 7, 2000, August 22, 2000, September 11, 2000, September 26, 2000, September 28, 2000, October 24, 2000, November 28, 2000",
+      "Đã tìm thấy 2 sự kiện: Township this Celebration, Butler Bicentennial Committee that are included during their Week of Celebration"
+    ]
+  },
+  {
+    "file": "doc_61_https___web_archive_org_web_20110523130245_http____cleaned.json",
+    "url": "https://web.archive.org/web/20110523130245/http://grfx.cstv.com/photos/schools/pitt/sports/m-footbl/auto_pdf/2008FBMediaGuide.pdf",
+    "chunk_count": 544,
+    "integrity_issues": [
+      "Đã tìm thấy 2 ngày tháng: December 23, 2004, November 30, 2007",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_83_https___www_neighborhoodscout_com_pa_pittsburgh_cr_cleaned.json",
+    "url": "https://www.neighborhoodscout.com/pa/pittsburgh/crime",
+    "chunk_count": 4,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_42_https___web_archive_org_web_20110710205520_http____cleaned.json",
+    "url": "https://web.archive.org/web/20110710205520/http://www.evandobelle.com/SOOC%20Survey%20Overview.pdf",
+    "chunk_count": 19,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_64_https___web_archive_org_web_20080414064613_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080414064613/http://grfx.cstv.com/photos/schools/pitt/sports/m-wrestl/auto_pdf/0607_media_guide.pdf",
+    "chunk_count": 109,
+    "integrity_issues": [
+      "Đã tìm thấy 39 ngày tháng: September 8, 1979, January 29, 2003, October 14, 2005, September 22, 1986, May 17, 1985, July 24, 1986, August 12, 1985, March 17, 1984, July 2, 1986, January 15, 1985, January 28, 1987, December 27, 1983, February 2, 1986, April 6, 1985, August 16, 1986, January 10, 1986, October 30, 1985, December 18, 1985, August 5, 1986, December 20, 1985, March 12, 1986, February 12, 1986, June 13, 1987, May 7, 1988, November 14, 1988, July 12, 1987, January 28, 1988, October 14, 1987, December 10, 1987, August 13, 1987, November 5, 2005, November 12, 2005, November 19, 2005, January 29, 2006, February 4, 2006, November 19, 2005, February 11, 2006, December 4, 2005, December 18, 2005",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_85_https___www_post-gazette_com_local_pittsburgh-hist_cleaned.json",
+    "url": "https://www.post-gazette.com/local/pittsburgh-history",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Đã tìm thấy 1 sự kiện: Gazette ACCOUNT Subscribe Login Register Log out My Profile Subscriber Services Search SECTIONS HOME Homepage This Just In Chats Weather Traffic Event"
+    ]
+  },
+  {
+    "file": "doc_25_https___en_wikipedia_org_wiki_Pittsburgh_Pirates_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Pirates",
+    "chunk_count": 63,
+    "integrity_issues": [
+      "Đã tìm thấy 205 ngày tháng: October 15, 1881, May 25, 1935, October 1, 2000, January 24, 2020, May 12, 2025, June 12, 2019, September 19, 1987, September 6, 1982, August 7, 1987, July 21, 2007, April 18, 1972, April 6, 1973, April 7, 1977, April 15, 1997, May 8, 1886, August 5, 1921, September 1, 1971, October 13, 1971, July 12, 1997, April 6, 2015, May 9, 2015, April 24, 2017, April 26, 2017, August 23, 2017, September 21, 1963, September 1, 1971, August 5, 1921, October 1, 2011, March 2, 2016, December 16, 2023, August 5, 1921, June 22, 2019, January 8, 2021, January 11, 2021, May 17, 2019, June 22, 2019, April 16, 2023, December 24, 2012, February 10, 2022, September 30, 2024, October 17, 1881, March 11, 1882, August 20, 2020, March 28, 2018, August 14, 2003, October 16, 2021, October 29, 2016, September 4, 2020, September 1, 2016, September 4, 2020, July 4, 2013, April 6, 2015, June 10, 2015, March 31, 2015, September 29, 2004, October 21, 2007, July 23, 2008, June 5, 2008, April 10, 2008, April 9, 2008, July 29, 2008, May 9, 2007, August 31, 2008, March 20, 1930, April 20, 2018, March 22, 1950, April 20, 2018, May 24, 1930, April 20, 2018, May 6, 2006, September 1, 2008, September 1, 2008, September 30, 2012, February 18, 2021, April 18, 2021, February 8, 2012, February 14, 2012, December 29, 2006, June 21, 2013, February 3, 2012, February 10, 2017, April 5, 2017, April 5, 1924, April 25, 1924, March 30, 1924, March 4, 1925, April 12, 1925, February 18, 2016, June 22, 2019, December 13, 2014, August 31, 2020, January 13, 2018, August 31, 2020, January 24, 2020, August 31, 2020, June 22, 2023, April 28, 2009, July 4, 2005, July 7, 2005, July 14, 2011, January 3, 2011, September 10, 1993, September 27, 1993, September 28, 1992, May 11, 2008, October 8, 2019, September 3, 2020, August 1, 2019, September 3, 2020, April 20, 2014, September 3, 2020, December 14, 2020, May 20, 2016, August 8, 2022, September 10, 2022, September 10, 2022, September 3, 2022, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, August 19, 2014, October 11, 2024, October 11, 2024, October 27, 2008, December 5, 2010, January 2, 2010, December 5, 2010, July 12, 1980, July 14, 2011, December 5, 2010, April 26, 2014, November 26, 2014, August 14, 2006, November 12, 2007, August 17, 2006, September 17, 2006, June 23, 2006, January 2, 2010, September 5, 2010, December 5, 2010, November 25, 2008, July 1, 2010, December 5, 2010, January 2, 2010, June 5, 2011, December 5, 2010, February 22, 2012, September 22, 2012, September 26, 2012, May 9, 2015, May 11, 2015, April 27, 2017, May 5, 2017, April 26, 2017, August 23, 2017, August 24, 2017, October 18, 2023, July 23, 2013, February 19, 2013, September 1, 2011, October 12, 2014, May 18, 2016, October 5, 2011, November 7, 2007, June 7, 2008, September 29, 2000, April 7, 2011, April 25, 2012, November 3, 2011, May 26, 2005, February 7, 1955, January 2, 2010, August 10, 2007, December 5, 2010, October 2, 2013, October 12, 2011, October 15, 2011, October 12, 2011, March 2, 2016, March 2, 2016, February 26, 2021, December 13, 2023, September 28, 2016, February 14, 2007, December 29, 2008, April 7, 1986, June 11, 1985, June 11, 1985, December 28, 2015, March 3, 2016, January 21, 2020, January 19, 2020, April 3, 2006, July 18, 2011, December 5, 2010",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_8_https___web_archive_org_web_20070927220849_http____cleaned.json",
+    "url": "https://web.archive.org/web/20070927220849/http://www.apta.com/research/stats/ridership/riderep/documents/07q1bus.pdf",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_4_https___www_americanimmigrationcouncil_org_sites_d_cleaned.json",
+    "url": "https://www.americanimmigrationcouncil.org/sites/default/files/research/council_new_americans_in_pittsburgh_9_2023.pdf",
+    "chunk_count": 27,
+    "integrity_issues": [
+      "Đã tìm thấy 8 ngày tháng: January 1, 2019, December 31, 2019, January 1, 2022, December 31, 2022, January 1, 2022, December 31, 2022, June 15, 2007, July 16, 2021",
+      "Đã tìm thấy 1 sự kiện: He was impressed by the city s diversity and felt overjoyed after attending the university s Latin American Festival"
+    ]
+  },
+  {
+    "file": "doc_84_https___www_phipps_conservatory_org__cleaned.json",
+    "url": "https://www.phipps.conservatory.org/",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Đã tìm thấy 1 sự kiện: BioBlitz Family Fun Festival"
+    ]
+  },
+  {
+    "file": "doc_13_https___web_archive_org_web_20080528074040_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080528074040/http://news.steelers.com/MediaContent/2007/08/22/05/Steelers_History_80311.pdf",
+    "chunk_count": 23,
+    "integrity_issues": [
+      "Đã tìm thấy 39 ngày tháng: July 8, 1933, August 25, 1988, January 27, 1901, July 20, 1932, July 20, 1932, January 27, 1901, July 8, 1933, December 21, 1947, November 22, 1942, October 25, 1964, January 27, 1969, January 28, 1969, August 28, 1970, October 25, 1964, December 23, 1972, September 20, 1970, January 27, 1969, January 12, 1975, January 21, 1979, January 29, 1974, January 18, 1976, December 26, 1991, January 20, 1980, January 6, 1980, August 8, 1987, August 25, 1988, January 21, 1992, December 26, 1991, January 28, 1996, December 16, 2000, August 25, 2001, October 7, 2001, July 29, 2000, January 5, 2006, October 26, 2003, January 5, 2007, January 23, 2005, February 5, 2006, January 22, 2007",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_14_http___fs_ncaa_org_Docs_stats_m_basketball_RB_2009_cleaned.json",
+    "url": "http://fs.ncaa.org/Docs/stats/m_basketball_RB/2009/D1.pdf",
+    "chunk_count": 367,
+    "integrity_issues": [
+      "Đã tìm thấy 39 ngày tháng: April 2, 1988, March 26, 1973, March 7, 1959, March 11, 1961, March 1, 1952, March 29, 1975, March 21, 1991, March 6, 1990, March 13, 1962, March 6, 1956, March 16, 1992, March 23, 1954, March 16, 1976, March 12, 1991, March 12, 1963, March 4, 1969, March 13, 1984, March 11, 1997, March 15, 2005, March 1, 1983, March 14, 2000, March 1, 1983, March 6, 1990, March 10, 1970, March 22, 1968, March 18, 2003, March 3, 1953, March 1, 1983, March 14, 2000, March 7, 1981, March 11, 2004, March 6, 1990, March 17, 1994, March 11, 2004, March 3, 1962, December 24, 1982, April 2, 1983, April 4, 2005, January 20, 1949",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_80_https___www_pghworks_com__cleaned.json",
+    "url": "https://www.pghworks.com/",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Đã tìm thấy 6 ngày tháng: May 13, 2025, April 23, 2025, April 23, 2025, April 22, 2025, April 16, 2025, April 14, 2025",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_19_https___web_archive_org_web_20101025123027_http____cleaned.json",
+    "url": "https://web.archive.org/web/20101025123027/http://alleghenyconference.org/PDFs/PRAFactSheets/FS09ThreeReasons.pdf",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_62_https___web_archive_org_web_20130602201604_http____cleaned.json",
+    "url": "https://web.archive.org/web/20130602201604/http://grfx.cstv.com/photos/schools/pitt/sports/m-baskbl/auto_pdf/2012-13/misc_non_event/m-baskbl-mg-full.pdf",
+    "chunk_count": 863,
+    "integrity_issues": [
+      "Đã tìm thấy 179 ngày tháng: May 4, 2012, May 4, 2012, June 24, 2010, March 8, 2013, March 11, 2013, March 19, 2011, March 13, 2012, April 15, 2003, November 10, 1965, June 2, 2002, April 15, 2012, April 15, 2003, January 6, 2008, July 15, 2009, January 6, 2008, January 6, 2009, January 17, 2010, January 8, 2010, February 23, 2010, June 15, 2008, March 4, 2009, December 16, 1981, March 4, 2009, August 13, 1965, April 9, 1957, April 14, 1989, April 18, 2009, November 11, 2009, January 1, 1992, August 9, 2009, September 16, 2009, April 21, 1992, April 24, 2010, January 29, 2012, July 28, 1993, August 21, 2011, April 7, 2012, April 20, 1991, April 7, 2012, April 25, 1992, January 12, 2002, November 11, 2011, November 13, 2011, November 16, 2011, November 22, 2011, November 25, 2011, November 27, 2011, November 30, 2011, December 3, 2011, December 6, 2011, December 10, 2011, December 17, 2011, December 20, 2011, December 23, 2011, December 27, 2011, January 4, 2012, January 5, 2012, January 11, 2012, January 14, 2012, January 16, 2012, January 21, 2012, January 13, 2007, January 25, 2012, January 21, 2012, January 28, 2012, January 30, 2012, February 5, 2012, February 8, 2012, February 12, 2012, February 16, 2012, February 19, 2012, February 26, 2012, February 29, 2012, March 3, 2012, March 6, 2012, March 7, 2012, March 14, 2012, March 19, 2012, March 21, 2012, March 26, 2012, March 28, 2012, March 30, 2012, January 25, 1988, March 8, 2009, March 1, 2004, March 7, 2004, March 2, 1988, March 4, 2009, March 3, 2002, March 17, 2004, March 9, 2009, January 13, 1968, March 2, 1988, February 20, 1989, March 4, 2009, November 1, 1964, July 4, 1894, February 15, 1928, December 17, 1933, December 29, 1953, December 27, 1960, December 8, 1970, December 10, 1977, February 19, 1982, December 6, 1988, December 29, 1994, December 8, 2001, April 29, 2004, April 4, 1975, March 26, 1986, March 8, 1999, February 18, 1928, December 29, 1981, January 6, 1930, December 27, 1991, February 26, 1951, December 15, 1951, January 16, 1993, January 10, 1953, February 2, 1963, January 6, 1996, February 15, 1964, March 4, 1998, February 23, 1974, February 17, 1999, February 20, 1999, December 13, 1975, February 2, 1977, January 10, 2004, February 11, 1978, January 4, 2006, December 15, 1979, December 20, 2007, February 10, 1979, February 7, 2008, March 13, 1981, March 4, 2010, March 30, 1934, March 30, 1934, November 23, 2002, October 12, 2002, March 3, 2006, January 21, 1998, October 11, 2002, March 4, 2009, March 6, 2004, April 25, 1998, March 7, 2009, October 13, 2002, November 19, 2005, March 18, 1999, November 8, 2002, January 16, 2010, January 4, 2006, November 9, 2002, June 22, 1999, November 22, 2002, January 13, 2007, February 12, 2010, November 23, 2002, November 13, 1999, November 24, 2008, June 15, 2000, January 6, 2003, January 14, 2008, February 6, 2002, March 4, 2010, February 7, 2008, March 5, 2003, March 2, 2002, February 15, 2004, April 27, 2002, March 5, 2011, August 31, 2002, January 21, 2012, January 11, 2009, February 29, 2004, February 28, 1787, May 4, 2012",
+      "Đã tìm thấy 11 sự kiện: Web sites of each participating Event, Derby his club team to two national titles Festival, Kentucky Derby Festival, Ricardo Greer National Sports Festival, L ECAC Holiday Festival, ECAC Holiday Festival, ECAC Holiday Festival, ECAC Holiday Festival, ECAC Holiday Festival, First Basketball Event, Eastern Collegiate Athletic Conference Holiday Festival"
+    ]
+  },
+  {
+    "file": "doc_36_https___en_wikipedia_org_wiki_Pittsburgh_Marathon_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Marathon",
+    "chunk_count": 9,
+    "integrity_issues": [
+      "Đã tìm thấy 5 ngày tháng: May 5, 1985, October 3, 1984, May 5, 1985, March 6, 2012, May 19, 2008",
+      "Đã tìm thấy 1 sự kiện: Clara Santucci Eyes Event"
+    ]
+  },
+  {
+    "file": "doc_82_http___www_weather_gov_media_hazardsimplification__cleaned.json",
+    "url": "http://www.weather.gov/media/hazardsimplification/Heat HazSimp Factsheet.pdf",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_10_https___en_wikipedia_org_wiki_History_of_Pittsburg_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/History_of_Pittsburgh",
+    "chunk_count": 70,
+    "integrity_issues": [
+      "Đã tìm thấy 110 ngày tháng: November 10, 1749, November 25, 1753, February 17, 1754, May 28, 1754, July 3, 1754, July 9, 1755, September 8, 1756, November 25, 1758, June 22, 1763, August 1, 1763, February 28, 1787, March 18, 1816, October 1, 1840, April 10, 1845, May 12, 2001, November 5, 2008, October 19, 2022, November 29, 2010, February 7, 2007, April 14, 2007, April 17, 2007, November 6, 2008, November 6, 2008, March 18, 2008, April 14, 2007, February 21, 1857, December 2, 2008, November 6, 2008, May 16, 2013, May 9, 2004, March 22, 2008, November 6, 2008, August 11, 1877, July 9, 2012, February 10, 2014, December 8, 2013, December 4, 2013, February 10, 2014, December 7, 2013, June 30, 2011, December 7, 2013, March 29, 2012, June 12, 2012, June 3, 2014, January 25, 1928, January 17, 2008, March 10, 2016, November 6, 2008, July 30, 1955, July 30, 1955, February 10, 2014, June 29, 2007, April 14, 2007, March 22, 1949, February 10, 2014, June 26, 1956, August 4, 1955, May 14, 2011, April 14, 2007, February 10, 2014, September 23, 1974, December 23, 2012, February 10, 2014, December 29, 1989, December 27, 1989, December 23, 2012, February 10, 2014, March 17, 2008, April 14, 2007, October 10, 2006, April 14, 2007, September 29, 2008, November 6, 2008, July 10, 2017, November 6, 2008, October 3, 1985, April 25, 2016, April 26, 2007, September 16, 2007, November 26, 2006, April 24, 2007, July 1, 2011, April 1, 2010, July 1, 2011, August 21, 2012, August 1, 2012, October 10, 2012, May 16, 2013, April 14, 2013, February 10, 2014, September 24, 2015, February 10, 2014, February 10, 2014, February 21, 2014, February 10, 2014, February 10, 2014, February 10, 2014, February 10, 2014, February 10, 2014, February 10, 2014, February 10, 2014, September 5, 2016, February 10, 2014, January 3, 2014, February 10, 2014, February 22, 2014, February 10, 2014, March 31, 2016, February 10, 2014, February 10, 2014",
+      "Đã tìm thấy 1 sự kiện: Pennsylvania And Its Centennial Celebration"
+    ]
+  },
+  {
+    "file": "doc_47_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/2024-2025%20CDS%20Pittsburgh_6.pdf",
+    "chunk_count": 69,
+    "integrity_issues": [
+      "Đã tìm thấy 9 ngày tháng: October 15, 2024, October 15, 2024, October 15, 2024, July 1, 2023, June 30, 2024, July 1, 2023, June 30, 2024, July 1, 2023, June 30, 2024",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_3_https___www_weather_gov_media_pbz_records_prec_pdf_cleaned.json",
+    "url": "https://www.weather.gov/media/pbz/records/prec.pdf",
+    "chunk_count": 4,
+    "integrity_issues": [
+      "Đã tìm thấy 19 ngày tháng: September 17, 2004, September 9, 2018, September 8, 2004, August 21, 1888, October 15, 1954, July 28, 1999, September 29, 2015, September 1, 2019, September 17, 1876, September 12, 1878, October 2, 1929, May 25, 1997, May 24, 1973, May 11, 1889, May 5, 1950, May 12, 1980, May 28, 2000, 38 Oct 1901, 42 May 1911",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_44_https___web_archive_org_web_20130403033143_http____cleaned.json",
+    "url": "https://web.archive.org/web/20130403033143/http://www.upmc.com/about/community-commitment/Documents/cb-report-2011.pdf",
+    "chunk_count": 35,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_66_https___web_archive_org_web_20080414064652_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080414064652/http://grfx.cstv.com/photos/schools/pitt/sports/w-gym/auto_pdf/0607-media-guide.pdf",
+    "chunk_count": 98,
+    "integrity_issues": [
+      "Đã tìm thấy 63 ngày tháng: March 30, 1985, February 12, 2005, January 21, 2006, February 26, 2005, March 9, 2004, February 11, 2006, February 19, 2005, February 19, 2005, October 25, 1985, February 17, 2006, January 29, 2006, January 14, 2006, March 18, 2006, June 22, 1986, March 8, 2005, March 7, 2006, February 11, 2006, March 8, 2005, March 8, 2005, July 20, 1986, February 12, 2005, March 4, 2006, February 11, 2006, March 7, 2006, February 17, 2006, February 12, 2005, March 5, 2005, March 8, 2005, March 7, 2006, February 13, 1985, February 12, 2005, January 14, 2006, March 20, 2004, July 16, 1987, January 21, 2006, March 7, 2006, February 11, 2006, March 25, 2006, May 6, 1986, February 12, 2005, March 8, 2005, February 5, 2005, August 3, 1987, March 18, 2006, January 21, 2006, March 18, 2005, January 29, 2005, February 12, 2005, January 29, 2005, April 22, 1986, February 28, 1987, March 18, 2006, August 23, 1986, February 26, 2005, December 13, 1986, November 25, 1986, May 12, 1988, June 22, 1988, February 3, 1988, November 9, 1987, October 13, 1987, September 7, 1987, January 6, 1988",
+      "Đã tìm thấy 2 sự kiện: ALPHABETICAL ROSTER PANTHERS BY STATE Name Year Event, Cat Classic Event"
+    ]
+  },
+  {
+    "file": "doc_81_https___www_weather_gov_pbz_climate_cleaned.json",
+    "url": "https://www.weather.gov/pbz/climate",
+    "chunk_count": 6,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_69_https___en_wikipedia_org_wiki_Pittsburgh_Regional__cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Regional_Transit",
+    "chunk_count": 27,
+    "integrity_issues": [
+      "Đã tìm thấy 53 ngày tháng: March 1, 1964, April 19, 1963, March 1, 1964, November 24, 2010, September 21, 2006, June 9, 2022, April 29, 2016, January 1, 2022, September 10, 2000, July 22, 2011, March 27, 2011, February 19, 2025, February 25, 2025, November 11, 2017, June 9, 2022, November 8, 2023, January 3, 2007, May 26, 2009, November 20, 2008, November 27, 2005, May 26, 2009, June 6, 1977, November 23, 2008, May 26, 2009, April 25, 1989, June 2, 2004, September 21, 2006, May 26, 2009, April 29, 2009, June 7, 2003, June 17, 2007, January 12, 2008, January 13, 2008, November 25, 2008, October 24, 2009, November 29, 2009, January 24, 2006, January 12, 2016, April 29, 2016, January 25, 2008, June 28, 2007, July 23, 2011, October 10, 2023, October 10, 2023, December 4, 2005, July 31, 2013, September 3, 2004, May 18, 2009, December 14, 2010, December 31, 2010, March 27, 2011, June 12, 2011, February 8, 2019",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_21_https___web_archive_org_web_20140202184957_http____cleaned.json",
+    "url": "https://web.archive.org/web/20140202184957/http://obs.rc.fas.harvard.edu/chetty/mobility_geo.pdf",
+    "chunk_count": 179,
+    "integrity_issues": [
+      "Đã tìm thấy 2 ngày tháng: November 22, 2013, January 12, 2012",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_24_https___web_archive_org_web_20140124023129_http____cleaned.json",
+    "url": "https://web.archive.org/web/20140124023129/http://static.nfl.com/static/content/public/image/history/pdfs/History/2013/373_399_Past_Standings.pdf",
+    "chunk_count": 58,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: April 30, 1921",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_20_http___www_alleghenyplaces_com_docs_DraftPlan_Chap_cleaned.json",
+    "url": "http://www.alleghenyplaces.com/docs/DraftPlan/Chapter4C.pdf",
+    "chunk_count": 57,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_23_https___static_www_nfl_com_image_upload_league_app_cleaned.json",
+    "url": "https://static.www.nfl.com/image/upload/league/apps/league-site/media-guides/2022/2022_NFL_Record_and_Fact_Book.pdf",
+    "chunk_count": 3546,
+    "integrity_issues": [
+      "Đã tìm thấy 577 ngày tháng: March 30, 2021, June 1, 2023, June 25, 1978, July 22, 1974, July 30, 1967, July 28, 1980, March 21, 1974, April 3, 1959, July 30, 1983, May 23, 1986, July 25, 1967, April 30, 1967, April 3, 1973, May 6, 1991, June 10, 1984, June 12, 1990, May 10, 1983, March 2, 1992, July 19, 1953, June 24, 1994, April 9, 1973, July 31, 1956, April 8, 1982, April 24, 1989, March 15, 1959, May 1, 1991, March 12, 1987, April 4, 1989, March 20, 1978, May 30, 1979, April 3, 1977, May 8, 1958, April 16, 1998, June 6, 1980, May 29, 1976, April 17, 1995, June 10, 1987, April 1, 1972, June 2, 1985, July 3, 1984, July 19, 1976, April 24, 1978, March 19, 1958, June 1, 1962, July 12, 1969, April 22, 1976, March 29, 1982, July 5, 1984, April 4, 1977, March 30, 1976, March 22, 2011, March 6, 1986, May 11, 1981, June 11, 1990, May 19, 1987, March 6, 1983, May 6, 1974, April 23, 1974, April 8, 1978, April 22, 1993, May 1, 1981, May 29, 1967, March 30, 1989, April 16, 1952, March 28, 1988, March 25, 1987, July 2, 1971, April 20, 1988, March 5, 1990, June 30, 1973, June 30, 1984, July 11, 1979, July 17, 1965, July 9, 1990, March 15, 1997, April 5, 1972, June 13, 1977, May 18, 1967, March 1, 1965, July 31, 1992, June 10, 1983, March 11, 1981, July 5, 2014, July 2, 1982, June 25, 1985, June 6, 1973, April 4, 1984, June 2, 1966, April 28, 1985, June 10, 2016, March 25, 1976, July 29, 1987, March 18, 1989, March 12, 1976, July 11, 1992, July 4, 1986, May 1, 1972, June 11, 1964, June 18, 1973, March 9, 1976, July 7, 1987, May 26, 1983, May 17, 1970, July 12, 1978, April 21, 1996, May 5, 1970, July 2, 1961, May 8, 1965, June 21, 1985, July 10, 1979, June 18, 1973, June 11, 1974, July 15, 1989, April 13, 1976, June 18, 1982, March 19, 1990, July 29, 1983, July 19, 1968, March 8, 1975, June 3, 1960, June 26, 1979, June 18, 1953, June 22, 1988, May 1, 1974, March 11, 1983, April 10, 2012, May 15, 1986, May 1, 1994, May 19, 1983, April 5, 1983, June 29, 1965, July 5, 1985, May 12, 1990, March 5, 1994, May 25, 1985, April 11, 1988, June 28, 1983, March 20, 1979, May 28, 1979, July 21, 1970, July 25, 1964, July 8, 2000, May 8, 1973, April 14, 1975, July 23, 1976, May 9, 1990, May 2, 1971, April 16, 1991, July 4, 1959, March 31, 1990, July 13, 1993, April 9, 1966, March 18, 1975, May 16, 1971, June 9, 1987, June 29, 1971, July 20, 1981, April 15, 1969, April 4, 1977, May 7, 1981, May 2, 1985, March 24, 1987, April 6, 1986, June 28, 1989, July 23, 1969, April 21, 1983, March 1, 1978, March 31, 2022, May 25, 1968, June 12, 1980, July 28, 1987, March 17, 1990, May 26, 1985, April 25, 1956, April 27, 2013, June 24, 1969, June 5, 1981, May 20, 1978, April 17, 1988, June 6, 1970, July 19, 1967, July 25, 1991, June 1, 2021, May 31, 2022, June 8, 1939, May 1, 1910, April 28, 1981, March 17, 1914, April 29, 1918, May 1, 1925, March 21, 2015, June 17, 1940, March 4, 1933, April 10, 1948, June 9, 2004, March 1, 1946, July 22, 1966, April 18, 1973, June 13, 2019, May 5, 1919, March 22, 1960, July 16, 1992, April 4, 1967, May 8, 1957, July 30, 2019, June 29, 1986, July 5, 2009, May 20, 1939, May 11, 2013, March 31, 2003, March 10, 1946, July 19, 1968, March 6, 1898, July 31, 1970, July 4, 1929, March 29, 1955, June 29, 1968, March 16, 1951, July 24, 1934, April 15, 2020, June 17, 1965, June 20, 1935, June 29, 1949, April 7, 1954, April 11, 1916, May 23, 1995, May 6, 1907, May 8, 1993, March 18, 1919, March 21, 1937, June 13, 1903, March 14, 1972, May 20, 1927, July 31, 1962, July 1, 1953, April 4, 1951, April 12, 2019, March 7, 1950, May 2, 1959, June 17, 1923, March 31, 1938, April 2, 1910, July 16, 1943, June 26, 1997, June 3, 2011, March 20, 1958, June 3, 2013, June 29, 1999, April 10, 1909, May 16, 1948, May 21, 2010, May 23, 2017, April 9, 1898, May 11, 2017, May 27, 1903, March 2, 1962, July 8, 1952, April 16, 1928, July 15, 1935, April 10, 1936, July 5, 1998, July 5, 1956, July 29, 1887, June 11, 1913, May 15, 1975, July 6, 2011, April 29, 2019, June 3, 1959, April 18, 2005, July 1, 1925, June 6, 1935, May 1, 1973, March 13, 1918, March 4, 2009, March 10, 1998, June 21, 1930, May 1, 1930, April 24, 1903, July 26, 1934, March 11, 2010, April 8, 1910, March 8, 1998, May 17, 1964, May 31, 1924, May 6, 2014, June 5, 1920, June 27, 1999, July 31, 1974, June 11, 1903, March 5, 1960, May 3, 1976, April 25, 2011, April 19, 1981, May 17, 1912, June 12, 2010, April 3, 1934, July 18, 2005, May 11, 1986, June 30, 1912, April 18, 1970, July 16, 1968, April 13, 2017, June 2, 1920, May 3, 1941, July 2, 2015, March 1, 1926, May 2, 2012, April 20, 2015, May 31, 2011, May 30, 1943, June 26, 1968, May 26, 2019, April 20, 1925, July 8, 2015, May 27, 1954, June 18, 1963, July 15, 1952, May 15, 1969, July 20, 1927, June 22, 2015, July 4, 2005, June 3, 1943, March 17, 1912, May 28, 1888, March 23, 1977, March 28, 1953, March 7, 1952, May 22, 1940, March 29, 1925, July 22, 1975, March 10, 1919, May 7, 1933, July 26, 1920, March 25, 1983, March 18, 1952, May 25, 1978, March 24, 1938, March 15, 1926, March 23, 1923, June 29, 2000, March 25, 2013, July 13, 1992, July 16, 1946, July 29, 1972, July 27, 1996, July 28, 1973, July 26, 1997, July 27, 1974, July 31, 1993, July 31, 1971, July 29, 1972, July 28, 1973, July 27, 1974, July 24, 1976, July 30, 1977, July 29, 1978, July 28, 1979, July 30, 1983, July 28, 1984, July 30, 1988, July 27, 1991, July 31, 1993, July 30, 1994, July 29, 1995, July 27, 1996, July 26, 1997, July 31, 2000, March 31, 2019, April 30, 1921, May 22, 2018, May 22, 2018, February 13, 2022, December 16, 2013, July 31, 1988, July 28, 1991, July 31, 1993, July 31, 1994, July 27, 1996, July 27, 1997, May 22, 2018, May 22, 2018, February 13, 2022, February 7, 2021, February 2, 2020, February 3, 2019, February 4, 2018, February 5, 2017, February 7, 2016, February 1, 2015, February 2, 2014, February 3, 2013, February 5, 2012, February 6, 2011, February 7, 2010, February 1, 2009, February 3, 2008, February 4, 2007, February 5, 2006, February 6, 2005, February 1, 2004, January 26, 2003, February 3, 2002, January 28, 2001, January 30, 2000, January 31, 1999, January 25, 1998, January 26, 1997, January 28, 1996, January 29, 1995, January 30, 1994, January 31, 1993, January 28, 1990, January 27, 1991, January 26, 1992, January 22, 1989, January 25, 1987, January 31, 1988, January 26, 1986, January 30, 1983, January 22, 1984, January 20, 1985, January 25, 1981, January 24, 1982, January 21, 1979, January 20, 1980, January 9, 1977, January 12, 1975, January 15, 1978, January 18, 1976, January 13, 1974, January 11, 1970, January 16, 1972, January 12, 1969, January 14, 1973, January 17, 1971, January 15, 1967, January 14, 1968, February 6, 2022, January 26, 2020, January 27, 2019, January 28, 2018, January 29, 2017, January 25, 2015, January 31, 2016, January 26, 2014, January 27, 2013, January 29, 2012, January 30, 2011, January 31, 2010, February 8, 2009, February 10, 2008, February 13, 2005, February 10, 2007, February 12, 2006, February 8, 2004, February 9, 2002, February 2, 2003, February 7, 1999, February 6, 2000, February 4, 2001, February 1, 1998, February 5, 1995, February 4, 1996, February 2, 1997, February 3, 1991, February 6, 1994, February 2, 1992, February 4, 1990, February 7, 1993, February 2, 1986, February 7, 1988, January 29, 1989, February 1, 1987, January 27, 1985, February 6, 1983, February 1, 1981, January 29, 1984, January 27, 1980, January 31, 1982, January 29, 1979, January 17, 1977, January 20, 1975, January 20, 1974, January 23, 1978, January 26, 1976, January 21, 1973, January 23, 1972, January 24, 1971, September 30, 2018, September 30, 2018, October 7, 2018, October 7, 2018, October 14, 2018, October 21, 2018, September 9, 2018, December 2, 2018, September 16, 2018, December 9, 2018, September 23, 2018, December 9, 2018, September 30, 2018, December 16, 2018, October 18, 2020, December 23, 2018, October 25, 2020, September 8, 2019, November 1, 2020, September 8, 2019, November 22, 2020, October 6, 2019, November 22, 2020, November 3, 2019, December 6, 2020, November 11, 2019, December 17, 2020, December 9, 2019, December 22, 2019, December 22, 2019, December 29, 2019, September 20, 2020, September 27, 2020, October 12, 2020, August 31, 1934, August 29, 1935, September 3, 1936, September 1, 1937, August 31, 1938, August 30, 1939, August 29, 1940, August 28, 1941, August 28, 1942, August 25, 1943, August 30, 1944, August 30, 1945, August 23, 1946, August 22, 1947, August 20, 1948, August 12, 1949, August 11, 1950, August 17, 1951, August 15, 1952, August 14, 1953, August 13, 1954, August 12, 1955, August 10, 1956, August 9, 1957, August 15, 1958, August 14, 1959, August 12, 1960, August 4, 1961, August 3, 1962, August 2, 1963, August 7, 1964, August 6, 1965, August 5, 1966, August 4, 1967, August 2, 1968, August 1, 1969, July 31, 1970, July 30, 1971, July 28, 1972, July 27, 1973, August 1, 1975, July 23, 1976, January 7, 1961, January 6, 1962, January 6, 1963, January 5, 1964, January 3, 1965, January 9, 1966, January 8, 1967, January 7, 1968, January 5, 1969, January 3, 1970, June 24, 2022, December 28, 1963, July 1, 2022",
+      "Đã tìm thấy 9 sự kiện: Ticketing and Event, PM Event, Gold and White Vice President of Event, PM Director of Stadium Event, Director of Merchandise Emily McNichol Director of Event, Stadium Event, Stadium Event, BUD LIGHT CELLY OF THE YEAR Celebration, Tampa Bay Buccaneers Enshrinement Festival"
+    ]
+  },
+  {
+    "file": "doc_40_https___www_brand_pitt_edu_sites_default_files_pit_cleaned.json",
+    "url": "https://www.brand.pitt.edu/sites/default/files/pitt_idmanual_21.pdf",
+    "chunk_count": 34,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_18_http___www_phmc_state_pa_us_Portal_Communities_BHP_cleaned.json",
+    "url": "http://www.phmc.state.pa.us/Portal/Communities/BHP/MPDFs/Historic_Aluminum_Resources_of_Southwestern_PA.pdf",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_26_https___en_wikipedia_org_wiki_Pittsburgh_synagogue_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_synagogue_shooting",
+    "chunk_count": 84,
+    "integrity_issues": [
+      "Đã tìm thấy 610 ngày tháng: November 4, 2018, October 27, 2018, October 27, 2018, September 4, 1972, October 15, 1979, April 27, 1979, October 29, 2018, November 1, 2018, January 29, 2019, February 11, 2019, May 30, 2023, June 16, 2023, June 16, 2023, July 13, 2023, August 3, 2023, August 26, 2023, August 10, 2023, September 19, 2023, March 27, 2019, October 28, 2018, October 29, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, January 29, 2019, June 26, 2023, October 31, 2018, October 27, 2018, October 28, 2018, October 29, 2018, October 30, 2018, October 28, 2018, October 29, 2018, October 29, 2018, February 11, 2019, February 22, 2019, August 9, 2023, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, August 3, 2023, August 2, 2023, October 12, 2024, August 2, 2023, August 2, 2023, August 3, 2023, October 27, 2018, October 27, 2018, October 27, 2018, January 6, 2019, October 27, 2018, October 27, 2018, October 28, 2018, October 27, 2018, February 20, 2018, October 28, 2018, October 27, 2018, July 21, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, February 16, 2023, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 29, 2018, October 29, 2018, October 29, 2018, October 27, 2018, November 3, 2018, November 3, 2018, October 27, 2018, November 3, 2018, November 3, 2018, October 28, 2018, November 3, 2018, November 3, 2018, October 28, 2018, November 3, 2018, November 3, 2018, October 29, 2018, October 29, 2018, November 3, 2018, October 26, 2018, November 3, 2018, November 3, 2018, October 30, 2018, November 3, 2018, November 4, 2018, October 27, 2018, November 20, 2018, November 20, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 29, 2018, November 21, 2018, November 20, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, November 1, 2018, February 4, 2019, February 4, 2019, October 30, 2018, November 16, 2018, November 20, 2018, November 4, 2018, November 5, 2018, November 4, 2018, October 27, 2018, November 26, 2018, November 25, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 29, 2018, November 16, 2018, November 21, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, June 18, 2023, October 24, 2024, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 30, 2018, November 5, 2018, November 5, 2018, January 9, 2025, October 28, 2018, October 29, 2018, October 30, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, November 2, 2018, November 4, 2018, November 5, 2018, November 1, 2018, November 5, 2018, November 5, 2018, November 2, 2018, November 5, 2018, November 20, 2018, February 23, 2021, September 24, 2023, February 23, 2021, November 1, 2018, October 31, 2018, October 28, 2018, October 30, 2018, December 5, 2022, February 16, 2023, November 21, 2018, November 20, 2018, November 3, 2018, November 2, 2018, October 27, 2018, March 25, 2024, April 24, 2025, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 13, 2021, January 21, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, January 19, 2019, January 21, 2019, October 29, 2018, January 22, 2019, January 21, 2019, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 27, 2018, November 21, 2018, November 21, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 29, 2018, October 29, 2018, October 27, 2018, November 10, 2018, October 29, 2018, November 5, 2018, February 16, 2023, January 3, 2019, November 2, 2018, November 4, 2018, November 21, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 29, 2018, October 29, 2018, October 29, 2018, October 31, 2018, October 31, 2018, November 1, 2018, October 31, 2018, February 2, 2019, February 1, 2019, October 27, 2018, October 28, 2018, October 29, 2018, October 27, 2018, October 29, 2018, October 29, 2018, November 1, 2018, November 1, 2018, November 1, 2018, January 29, 2019, January 30, 2019, February 1, 2019, October 25, 2020, May 10, 2021, May 10, 2021, June 25, 2021, September 25, 2019, October 11, 2019, October 11, 2019, October 31, 2019, November 15, 2019, November 15, 2019, November 12, 2021, January 20, 2022, February 3, 2022, March 20, 2022, September 20, 2022, March 6, 2023, April 26, 2023, April 24, 2023, May 30, 2023, May 30, 2023, May 30, 2023, June 14, 2023, June 7, 2023, June 9, 2023, June 15, 2023, June 16, 2023, June 16, 2023, June 27, 2023, June 29, 2023, June 28, 2023, July 13, 2023, August 3, 2023, August 3, 2023, August 3, 2023, August 3, 2023, August 2, 2023, August 2, 2023, August 3, 2023, August 28, 2023, November 2, 2023, May 17, 2024, December 23, 2024, December 23, 2024, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 30, 2018, November 22, 2018, October 31, 2018, October 28, 2018, October 31, 2018, October 30, 2018, October 28, 2019, October 29, 2019, May 29, 2023, October 15, 2023, November 2, 2023, March 28, 2024, February 28, 2024, March 28, 2024, October 30, 2018, October 30, 2018, October 30, 2018, October 30, 2018, October 30, 2018, October 31, 2018, October 31, 2018, November 1, 2018, April 22, 2023, August 4, 2022, October 29, 2018, October 29, 2018, October 30, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 27, 2018, October 27, 2018, October 28, 2018, October 27, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 29, 2018, October 29, 2018, October 29, 2018, October 30, 2018, October 29, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 29, 2018, August 27, 2021, August 26, 2021, October 30, 2018, October 31, 2018, October 31, 2018, October 28, 2018, December 3, 2021, December 3, 2021, February 2, 2019, October 28, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 30, 2018, October 30, 2018, October 28, 2018, February 16, 2023, October 28, 2018, October 28, 2018, November 6, 2018, November 5, 2018, November 3, 2018, November 6, 2018, November 5, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 29, 2018, October 29, 2018, October 28, 2018, October 29, 2018, October 29, 2018, October 27, 2018, October 29, 2018, October 29, 2018, October 28, 2018, October 30, 2018, October 29, 2018, October 28, 2018, October 29, 2018, October 29, 2018, October 30, 2018, October 31, 2018, October 30, 2018, October 31, 2018, November 3, 2018, November 20, 2018, October 29, 2019, December 12, 2019, January 19, 2020, October 27, 2018, October 28, 2018, October 27, 2018, October 28, 2018, October 29, 2018, October 30, 2018, October 28, 2018, October 28, 2018, October 30, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 29, 2018, October 28, 2018, October 28, 2018, October 31, 2018, October 31, 2018, October 29, 2018, October 30, 2018, October 31, 2018, October 28, 2018, October 29, 2018, November 1, 2018, October 28, 2018, November 1, 2018, October 31, 2018, October 30, 2018, November 1, 2018, October 31, 2018, October 28, 2018, November 1, 2018, October 31, 2018, October 29, 2018, October 30, 2018, October 31, 2018, October 28, 2018, April 29, 2020, October 31, 2018, October 30, 2018, October 30, 2018, October 31, 2018, October 30, 2018, November 1, 2018, October 31, 2018, October 29, 2018, November 1, 2018, October 31, 2018, October 31, 2018, October 31, 2018, October 31, 2018, October 29, 2018, November 1, 2018, October 31, 2018, November 4, 2018, November 4, 2018, November 4, 2018, November 2, 2018, September 3, 2019, August 16, 2020, April 26, 2021, August 16, 2020, October 5, 2024, October 12, 2024, October 11, 2024, October 12, 2024, October 30, 2018, October 30, 2018, October 29, 2018, October 31, 2018, October 30, 2018, October 30, 2018, October 30, 2018, October 30, 2018, October 30, 2018, October 31, 2018, October 30, 2018, October 29, 2018, October 30, 2018, October 30, 2018, October 29, 2018, October 29, 2018, October 30, 2018, October 30, 2018, November 18, 2020, October 30, 2018, October 31, 2018, November 1, 2018, November 1, 2018, November 4, 2018, October 30, 2018, November 29, 2018, January 10, 2019, October 29, 2018, January 20, 2019, January 10, 2019, October 27, 2018, January 10, 2019, August 10, 2023, September 29, 2023, September 19, 2023, September 29, 2023, August 10, 2023, September 29, 2023, October 29, 2018, October 31, 2018, October 30, 2018, November 1, 2018, November 3, 2018, November 3, 2018, October 30, 2018, October 30, 2018, October 31, 2018, October 30, 2018, October 30, 2018, October 30, 2018, November 7, 2018, November 16, 2018, November 14, 2018, November 18, 2018, November 16, 2018, November 4, 2018, November 20, 2018, November 20, 2018, March 5, 2019, April 1, 2019, March 5, 2019, December 13, 2022, December 13, 2022, October 25, 2022, December 13, 2022, December 13, 2022",
+      "Đã tìm thấy 1 sự kiện: Warsaw Ghetto Uprising Kielce cemetery massacre Operation Harvest Festival"
+    ]
+  },
+  {
+    "file": "doc_52_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/PGH-2019-2020-CDS.pdf",
+    "chunk_count": 62,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2019, October 15, 2019, July 1, 2018, June 30, 2019, July 1, 2018, June 30, 2019, July 1, 2018, June 30, 2019, July 1, 2018, June 30, 2019",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_65_https___web_archive_org_web_20080414064640_http____cleaned.json",
+    "url": "https://web.archive.org/web/20080414064640/http://grfx.cstv.com/photos/schools/pitt/sports/w-volley/auto_pdf/06-media-guide.pdf",
+    "chunk_count": 128,
+    "integrity_issues": [
+      "Đã tìm thấy 12 ngày tháng: October 2, 2005, December 18, 1986, April 28, 1986, May 20, 1987, October 6, 1986, August 23, 1987, October 25, 1986, February 20, 1987, January 19, 1987, October 13, 1987, May 20, 1988, January 25, 1988",
+      "Đã tìm thấy 1 sự kiện: Olympic Sports Festival"
+    ]
+  },
+  {
+    "file": "doc_57_https___web_archive_org_web_20131029193230_http____cleaned.json",
+    "url": "https://web.archive.org/web/20131029193230/http://www.pathfinders.pitt.edu/pdf/fall13_app.pdf",
+    "chunk_count": 5,
+    "integrity_issues": [
+      "Đã tìm thấy 3 ngày tháng: October 12, 2013, September 13, 2013, September 13, 2013",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_50_https___www_ir_pitt_edu_sites_default_files_assets_cleaned.json",
+    "url": "https://www.ir.pitt.edu/sites/default/files/assets/CDS_2021-2022_Pittsburgh%20Campus_6.pdf",
+    "chunk_count": 52,
+    "integrity_issues": [
+      "Đã tìm thấy 10 ngày tháng: October 15, 2021, October 15, 2021, July 1, 2020, June 30, 2021, July 1, 2020, June 30, 2021, July 1, 2020, June 30, 2021, July 1, 2020, June 30, 2021",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_73_https___www_cmu_edu_events__cleaned.json",
+    "url": "https://www.cmu.edu/events/",
+    "chunk_count": 0,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Đã tìm thấy 1 sự kiện: Submit an Event"
+    ]
+  },
+  {
+    "file": "doc_5_https___web_archive_org_web_20191221235539_https___cleaned.json",
+    "url": "https://web.archive.org/web/20191221235539/https://www.brandeis.edu/ssri/pdfs/communitystudies/PittsburghJewishCommStudy.pdf",
+    "chunk_count": 146,
+    "integrity_issues": [
+      "Đã tìm thấy 2 ngày tháng: March 20, 2018, December 20, 2016",
+      "Đã tìm thấy 1 sự kiện: Jewish Film Festival"
+    ]
+  },
+  {
+    "file": "doc_9_http___aapa_files_cms-plus_com_PDFs_2011_20U_20S_2_cleaned.json",
+    "url": "http://aapa.files.cms-plus.com/PDFs/2011%20U%20S%20%20PORT%20RANKINGS%20BY%20CARGO%20TONNAGE.pdf",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_45_https___web_archive_org_web_20090115041744_http____cleaned.json",
+    "url": "https://web.archive.org/web/20090115041744/http://www.peacecorps.gov/multimedia/pdf/stats/schools2008.pdf",
+    "chunk_count": 1,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_11_https___en_wikipedia_org_wiki_Culture_of_Pittsburg_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Pittsburgh",
+    "chunk_count": 17,
+    "integrity_issues": [
+      "Đã tìm thấy 3 ngày tháng: May 14, 2005, December 27, 2009, January 16, 2009",
+      "Đã tìm thấy 5 sự kiện: Three Rivers Film Festival, The Pittsburgh New Works Festival, Pittsburgh Pittsburgh Film Office Pittsburgh Cultural Trust Three Rivers Arts Festival, Pittsburgh New Works Festival, Pittsburgh Pittsburgh Film Office Pittsburgh Cultural Trust Three Rivers Arts Festival"
+    ]
+  },
+  {
+    "file": "doc_22_https___en_wikipedia_org_wiki_Pittsburgh_Steelers_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Pittsburgh_Steelers",
+    "chunk_count": 94,
+    "integrity_issues": [
+      "Đã tìm thấy 501 ngày tháng: July 8, 1933, July 8, 1933, July 8, 1933, September 20, 1933, January 7, 2007, January 22, 2007, February 1, 2009, February 6, 2011, September 29, 1957, December 3, 1973, January 12, 1975, September 2, 1984, July 24, 2002, December 16, 2018, October 10, 2021, December 23, 1972, December 9, 2018, September 19, 2021, September 23, 2023, December 7, 2008, December 16, 2012, November 13, 2016, August 2, 2007, May 14, 2025, December 24, 2022, October 25, 1964, November 2, 2014, August 1, 2017, January 11, 1975, April 14, 2013, November 19, 1967, May 19, 2020, June 3, 2020, June 3, 2020, December 7, 2019, November 10, 2020, November 4, 2020, July 8, 2024, July 20, 2022, July 8, 2024, June 14, 2023, November 27, 2020, January 24, 2020, October 20, 2009, August 19, 2024, July 6, 2020, August 19, 2024, November 6, 2009, August 19, 2024, June 8, 2007, November 4, 2012, December 4, 2021, August 29, 2008, November 12, 2020, December 4, 2021, September 25, 2013, January 24, 2014, May 18, 2018, November 21, 2020, May 18, 2018, June 26, 2014, August 19, 2024, July 30, 2024, March 30, 2009, May 20, 2008, March 28, 2018, April 15, 2007, July 16, 2020, August 19, 2024, February 1, 2011, February 4, 2011, February 6, 2011, January 28, 1969, July 30, 2024, April 24, 2024, July 30, 2024, January 29, 2021, August 19, 2024, July 30, 2024, July 30, 2024, July 30, 2024, January 25, 2018, July 30, 2024, August 20, 2024, December 25, 2021, August 19, 2024, July 30, 2024, January 22, 1992, July 30, 2024, August 20, 2024, August 20, 2024, February 13, 2006, July 30, 2024, December 16, 2017, December 15, 2017, August 9, 2007, August 19, 2024, January 5, 2007, January 11, 2007, May 18, 2018, January 23, 2007, July 30, 2024, January 22, 2007, August 20, 2024, August 20, 2024, August 20, 2024, August 20, 2024, August 20, 2024, August 20, 2024, February 2, 2009, July 30, 2024, September 19, 2009, August 19, 2024, August 20, 2024, September 12, 2010, August 20, 2024, August 20, 2024, August 20, 2024, February 7, 2011, July 30, 2024, January 9, 2012, August 19, 2024, October 29, 2012, June 26, 2013, October 29, 2012, August 19, 2024, August 19, 2024, August 19, 2024, January 4, 2015, August 19, 2024, August 19, 2024, January 10, 2016, August 19, 2024, January 18, 2016, August 19, 2024, August 19, 2024, August 19, 2024, August 19, 2024, January 23, 2017, August 19, 2024, August 19, 2024, January 14, 2018, August 19, 2024, August 19, 2024, August 19, 2024, December 2, 2020, August 19, 2024, August 19, 2024, January 11, 2021, August 19, 2024, August 19, 2024, January 17, 2022, August 19, 2024, January 27, 2022, August 19, 2024, July 30, 2024, January 16, 2017, August 19, 2024, April 29, 2022, August 19, 2024, August 19, 2024, August 19, 2024, August 19, 2024, March 15, 2024, August 19, 2024, March 17, 2024, August 19, 2024, March 11, 2024, August 19, 2024, January 02, 2011, January 2, 2011, October 17, 2012, September 3, 2012, July 7, 2008, July 13, 2008, December 4, 2021, July 7, 2008, July 11, 2008, December 4, 2021, July 8, 2008, July 11, 2008, December 4, 2021, December 17, 2008, July 12, 2018, May 18, 2018, March 24, 2009, May 19, 2018, May 18, 2018, December 22, 2009, June 13, 2011, December 4, 2021, April 13, 2013, April 11, 2013, December 4, 2021, August 29, 2023, September 4, 2023, September 15, 2019, April 8, 2010, May 12, 2024, August 19, 2024, November 1, 2017, December 4, 2021, January 11, 2021, December 4, 2021, December 4, 2021, July 30, 2020, August 19, 2024, November 30, 2020, November 26, 2020, May 14, 2018, May 18, 2018, March 1, 2018, August 19, 2024, May 30, 2018, February 24, 2021, November 26, 2020, December 23, 2019, August 4, 2024, May 29, 2012, August 5, 2020, May 12, 2020, August 6, 2020, May 12, 2020, March 8, 2021, May 12, 2020, August 4, 2024, February 13, 2009, August 6, 2020, May 12, 2020, November 14, 2019, April 20, 2020, May 12, 2020, August 4, 2024, June 24, 2020, August 19, 2024, July 23, 2015, July 30, 2024, August 4, 2024, July 30, 2024, December 18, 2017, July 31, 2018, July 31, 2018, August 19, 2024, August 4, 2024, July 30, 2024, July 30, 2024, January 8, 1999, December 4, 2021, December 9, 2018, May 31, 2019, December 19, 2018, January 30, 2025, November 11, 2016, April 23, 2021, January 20, 2017, August 19, 2024, August 4, 2024, August 9, 2007, September 29, 2007, December 4, 2021, August 19, 2007, August 20, 2007, December 4, 2008, August 30, 2008, October 8, 2008, August 30, 2008, October 5, 2012, August 6, 2020, May 8, 2020, February 28, 2008, April 9, 2008, June 7, 2008, February 27, 2008, May 11, 2008, February 29, 2008, September 7, 2006, August 6, 2020, May 8, 2020, December 16, 2022, February 11, 2022, January 31, 2006, August 19, 2024, March 12, 2012, October 30, 2018, September 3, 2012, March 25, 2012, September 3, 2012, August 18, 2021, August 19, 2024, August 19, 2024, July 12, 2022, August 4, 2024, August 19, 2024, August 20, 2010, August 21, 2010, May 18, 2018, October 31, 2016, October 31, 2016, April 20, 2022, August 4, 2024, September 25, 1934, April 23, 2021, May 18, 2018, May 13, 2016, September 24, 1987, June 17, 1959, August 3, 2012, August 5, 2012, May 18, 2018, September 10, 1957, April 23, 2021, May 18, 2018, September 6, 2022, September 6, 2022, February 4, 2011, August 24, 2013, May 18, 2018, July 30, 2014, August 1, 2014, December 4, 2021, April 24, 2016, November 17, 2015, March 17, 2007, April 21, 2008, April 23, 2021, August 9, 2015, May 6, 2008, April 21, 2008, April 17, 2008, April 21, 2008, April 23, 2021, February 5, 2012, January 21, 2009, February 5, 2012, October 7, 2008, April 21, 2008, February 14, 2021, February 7, 2021, April 23, 2008, April 21, 2008, February 20, 2009, April 21, 2008, April 15, 2008, April 21, 2008, February 18, 2009, April 21, 2008, May 5, 2008, April 21, 2008, March 16, 2006, April 21, 2008, February 2, 2020, February 2, 2020, January 15, 2020, January 15, 2020, April 17, 2008, April 21, 2008, May 6, 2008, April 21, 2008, April 16, 2008, April 21, 2008, April 15, 2008, April 21, 2008, February 3, 2009, January 31, 2009, July 14, 2016, January 12, 2020, January 12, 2020, December 20, 2008, April 21, 2008, April 23, 2021, February 7, 2021, May 6, 2008, April 21, 2008, May 6, 2008, April 21, 2008, July 13, 2013, June 3, 2013, July 13, 2013, June 3, 2013, April 17, 2008, April 21, 2008, May 5, 2008, April 21, 2008, April 29, 2016, April 28, 2016, July 16, 2013, June 3, 2013, January 2, 2014, June 3, 2013, February 7, 2016, February 7, 2016, April 22, 2009, April 21, 2008, May 11, 2018, May 18, 2018, May 25, 2018, May 18, 2018, May 23, 2018, May 18, 2018, August 6, 2007, November 12, 2007, December 4, 2021, August 19, 2024, May 26, 2010, March 30, 2010, January 2, 2009, February 7, 2016, December 4, 2021, March 4, 2010, March 19, 2010, October 24, 2007, January 7, 2012, March 19, 2010, June 5, 2009, March 22, 2010, January 28, 2019, July 30, 2024, February 11, 2015, February 10, 2015, August 4, 2024, June 6, 2024, February 11, 2020, July 30, 2024, August 1, 2017, August 1, 2017, December 4, 2021, August 29, 2017, August 29, 2017, December 4, 2021, July 28, 2018, July 28, 2018, July 28, 2018, July 27, 2019, July 27, 2019, July 27, 2019, September 25, 2020, October 9, 2020, September 26, 2020, August 1, 2021, August 1, 2021, July 30, 2022, July 30, 2022, July 29, 2023, July 29, 2023, July 27, 2024, July 27, 2024, August 4, 2024, March 14, 2014, July 28, 2017, July 28, 2017, January 18, 2007, May 1, 2007, December 4, 2021, September 26, 2017, January 19, 2018, May 18, 2018, January 15, 2018, May 18, 2018, May 5, 2015, May 7, 2015, December 4, 2021, February 27, 2008, August 19, 2024, January 1, 1970, August 4, 2024, March 2, 2022, July 30, 2024, January 31, 2019, July 30, 2024, January 1, 2020, August 4, 2024, July 31, 2022, July 30, 2024, December 8, 1980, August 4, 2024, February 16, 2022, August 4, 2024, September 3, 2020, August 4, 2024, January 13, 2020, August 4, 2024, February 4, 2011, August 4, 2024, August 6, 2011, August 19, 2024, August 6, 2011, August 19, 2024, January 5, 2016, August 19, 2024, October 16, 2017, August 19, 2024, July 7, 2024, August 19, 2024, November 17, 2016, December 2, 2016, December 4, 2021, November 17, 2016, August 4, 2024, June 14, 2017, June 17, 2017, December 4, 2021",
+      "Đã tìm thấy 2 sự kiện: Season Celebration, Season Celebration"
+    ]
+  },
+  {
+    "file": "doc_70_https___www_apta_com_wp-content_uploads_2024-Q4-Ri_cleaned.json",
+    "url": "https://www.apta.com/wp-content/uploads/2024-Q4-Ridership-APTA.pdf",
+    "chunk_count": 8,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  }
+]
