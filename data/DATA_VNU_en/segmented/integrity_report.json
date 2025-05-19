@@ -1,0 +1,101 @@
+[
+  {
+    "file": "doc_3_https___en_wikipedia_org_wiki_VNU_University_of_So_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Social_Sciences_and_Humanities",
+    "chunk_count": 4,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: October 10, 1945",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_5_https___en_wikipedia_org_wiki_VNU_University_of_En_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Engineering_and_Technology",
+    "chunk_count": 2,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_1_https___en_wikipedia_org_wiki_Vietnam_National_Uni_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/Vietnam_National_University,_Hanoi",
+    "chunk_count": 5,
+    "integrity_issues": [
+      "Đã tìm thấy 4 ngày tháng: June 25, 2020, November 26, 2009, 16 May 1906, 24 Sep 2021",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_9_http___jvef_org_VJUproject_English2013_09_pdf_cleaned.json",
+    "url": "http://jvef.org/VJUproject_English2013_09.pdf",
+    "chunk_count": 52,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: March 11, 2013",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_10_https___en_wikipedia_org_wiki_VNU_International_Sc_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_International_School",
+    "chunk_count": 2,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_4_https___en_wikipedia_org_wiki_VNU_University_of_La_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Languages_and_International_Studies",
+    "chunk_count": 5,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_7_https___en_wikipedia_org_wiki_VNU_University_of_Me_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Medicine_and_Pharmacy",
+    "chunk_count": 5,
+    "integrity_issues": [
+      "Đã tìm thấy 6 ngày tháng: November 18, 2020, May 20, 2010, October 27, 2020, December 23, 2022, May 24, 2023, November 20, 2023",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_1_https___vnu_edu_vn_home__C1916_N4_Lich-su-hinh-tha_cleaned.json",
+    "url": "https://vnu.edu.vn/home/?C1916/N4/Lich-su-hinh-thanh.htm",
+    "chunk_count": 12,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_2_https___en_wikipedia_org_wiki_VNU_University_of_Sc_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Science",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: June 4, 1956",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_8_https___en_wikipedia_org_wiki_VNU_Vietnam_Japan_Un_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_Vietnam_Japan_University",
+    "chunk_count": 4,
+    "integrity_issues": [
+      "Đã tìm thấy 1 ngày tháng: September 9, 2016",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  },
+  {
+    "file": "doc_6_https___en_wikipedia_org_wiki_VNU_University_of_Ec_cleaned.json",
+    "url": "https://en.wikipedia.org/wiki/VNU_University_of_Economics_and_Business",
+    "chunk_count": 3,
+    "integrity_issues": [
+      "Không tìm thấy thông tin ngày tháng (có thể thiếu ngày sự kiện).",
+      "Không tìm thấy tên sự kiện/lễ hội."
+    ]
+  }
+]
