@@ -1,0 +1,23 @@
+# Core dependencies
+langchain>=0.1.0  # Cho PromptTemplate và Document
+langchain-community>=0.0.10  # Cho HuggingFaceEmbeddings
+langchain-core>=0.1.0  # Cho các thành phần cốt lõi
+chromadb>=0.4.13  # Vector database
+
+# Model và embeddings
+torch>=2.0.0  # Cho HuggingFaceEmbeddings
+sentence-transformers>=2.2.2  # Cho embeddings model
+huggingface-hub>=0.17.1  # Cho việc tải model và login
+together>=0.2.5  # Cho Together AI API
+
+# UI và tiện ích
+gradio>=5.0.1  # Cho giao diện web
+pyyaml>=6.0  # Cho đọc file config
+tqdm>=4.65.0  # Cho thanh tiến trình khi tạo DB
+
+beautifulsoup4>=4.12.2
+pypdf>=3.16.0
+unstructured>=0.10.12
+tiktoken>=0.5.1
+llamaindex>=0.9.8
+pdfplumber>=0.10.2
