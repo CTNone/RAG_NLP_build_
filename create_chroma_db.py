@@ -1,5 +1,4 @@
 import glob
-import json
 import os
 import warnings
 from typing import List
@@ -9,72 +8,10 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 import torch
 from huggingface_hub import login
-from langchain.schema import Document
-from langchain_chroma import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from tqdm import tqdm
 
-from utils import load_config
-
-
-def load_json_documents(file_path: str) -> List[Document]:
-    """Đọc file JSON segmented và chuyển đổi thành documents"""
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-            if "chunks" not in data or not isinstance(data["chunks"], list):
-                print(f"Cấu trúc JSON không đúng định dạng: {file_path}")
-                return []
-
-            docs = []
-            url = data.get("url", "")
-            title = data.get("title", "")
-
-            for i, chunk in enumerate(data["chunks"]):
-                docs.append(
-                    Document(
-                        page_content=chunk,
-                        metadata={
-                            "source": file_path,
-                            "url": url,
-                            "title": title,
-                            "chunk_id": i,
-                        },
-                    )
-                )
-            return docs
-    except Exception as e:
-        print(f"Lỗi khi đọc file JSON {file_path}: {str(e)}")
-        return []
-
-
-def get_data_directories(base_path: str, prefix: str) -> List[str]:
-    """Tự động tìm các thư mục con bắt đầu bằng prefix"""
-    if not os.path.exists(base_path):
-        return []
-
-    return [
-        os.path.join(base_path, item)
-        for item in os.listdir(base_path)
-        if os.path.isdir(os.path.join(base_path, item)) and item.startswith(prefix)
-    ]
-
-
-def create_vector_db(
-    documents: List[Document], db_path: str, embeddings_model: str, device: str
-) -> None:
-    """Tạo và lưu vector database"""
-    # Khởi tạo mô hình embeddings
-    embeddings = HuggingFaceEmbeddings(
-        model_name=embeddings_model, model_kwargs={"device": device}
-    )
-
-    # Tạo và lưu database
-    Chroma.from_documents(
-        documents=documents, embedding=embeddings, persist_directory=db_path
-    )
-    print(f"Đã tạo và lưu vector database với {len(documents)} đoạn văn bản")
+from src import create_vector_db, load_config
+from src.retriever import get_data_directories, load_json_documents
 
 
 def main():
@@ -180,12 +117,7 @@ def main():
             create_vector_db(documents, db_path, embeddings_model, device)
         else:
             # Tải database hiện có
-            print("Đang tải vector database có sẵn...")
-            embeddings = HuggingFaceEmbeddings(
-                model_name=embeddings_model, model_kwargs={"device": device}
-            )
-            Chroma(persist_directory=db_path, embedding_function=embeddings)
-            print("Đã tải vector database thành công")
+            print("Đang giữ nguyên vector database có sẵn...")
 
     print("\n=== HOÀN THÀNH TẠO CƠ SỞ DỮ LIỆU CHROMA ===")
     print(f"Đường dẫn cơ sở dữ liệu: {db_path}")

@@ -2,94 +2,13 @@ import os
 from typing import List, Optional, Tuple
 
 import gradio as gr
-import torch
-from langchain.prompts import PromptTemplate
-from langchain_chroma import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from together import Together
 
-from utils import load_config
+from src import load_chroma_db, load_config, retrieve_documents
+from src.llm import call_llm_api, create_prompt
 
 # Biến toàn cục
 app_config = None
 app_db = None
-
-
-def load_chroma_db(config: dict) -> Chroma:
-    """Tải Chroma database"""
-    db_path = config["db_dir"]
-    embeddings_model = config["api"]["huggingface"]["embedding_model"]
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-
-    # Khởi tạo embeddings
-    embeddings = HuggingFaceEmbeddings(
-        model_name=embeddings_model, model_kwargs={"device": device}
-    )
-
-    print(f"Đang tải Chroma database từ {db_path}...")
-    db = Chroma(persist_directory=db_path, embedding_function=embeddings)
-    print(f"Đã tải thành công")
-    return db
-
-
-def retrieve_documents(query: str, k: int = 3) -> List[str]:
-    """Truy xuất các đoạn văn bản liên quan"""
-    global app_db
-    retriever = app_db.as_retriever(search_kwargs={"k": k})
-    docs = retriever.get_relevant_documents(query)
-
-    contexts = [f"[{i+1}] {doc.page_content}" for i, doc in enumerate(docs)]
-    print(f"Đã tìm thấy {len(docs)} đoạn văn bản liên quan")
-
-    # In ra các đoạn văn bản
-    for ctx in contexts:
-        print(f"\n{ctx}")
-
-    return contexts
-
-
-def create_prompt(question: str, contexts: List[str]) -> str:
-    """Tạo prompt từ câu hỏi và context"""
-    global app_config
-    context_text = "\n\n".join(contexts)
-    prompt_template = PromptTemplate.from_template(app_config["template"])
-    return prompt_template.format(context=context_text, question=question)
-
-
-def call_llm_api(prompt: str, history: Optional[List[Tuple[str, str]]] = None) -> str:
-    """Gọi API LLM để lấy phản hồi"""
-    global app_config
-
-    # Thiết lập API
-    os.environ["TOGETHER_API_KEY"] = app_config["api"]["together"]["token"]
-    client = Together()
-    model_id = app_config["api"]["together"]["model_id"]
-
-    # Chuẩn bị messages từ lịch sử chat
-    messages = []
-    if history and len(history) > 0:
-        for user_msg, assistant_msg in history:
-            if user_msg:
-                messages.append({"role": "user", "content": user_msg})
-            if assistant_msg:
-                messages.append({"role": "assistant", "content": assistant_msg})
-
-    # Thêm prompt hiện tại
-    messages.append({"role": "user", "content": prompt})
-
-    # Gọi API
-    response = client.chat.completions.create(
-        model=model_id,
-        messages=messages,
-        temperature=app_config["temperature"],
-        top_p=app_config["top_p"],
-        max_tokens=app_config["max_new_tokens"],
-    )
-
-    if response and hasattr(response, "choices") and len(response.choices) > 0:
-        return response.choices[0].message.content
-    else:
-        raise ValueError("Không nhận được phản hồi hợp lệ từ API")
 
 
 def get_response(message: str, history=None) -> str:
@@ -103,9 +22,9 @@ def get_response(message: str, history=None) -> str:
 
         # Thực hiện truy vấn RAG
         print(f"Truy vấn: '{message}'")
-        contexts = retrieve_documents(message, app_config["retriever_k"])
-        prompt = create_prompt(message, contexts)
-        return call_llm_api(prompt, history)
+        contexts = retrieve_documents(app_db, message, app_config["retriever_k"])
+        prompt = create_prompt(message, contexts, app_config["template"])
+        return call_llm_api(prompt, app_config, history)
 
     except Exception as e:
         print(f"Lỗi: {str(e)}")
@@ -146,12 +65,14 @@ examples = [
     "VNU-USSH được thành lập khi nào",
 ]
 
+# Sử dụng ChatInterface mà không có tham số message_type
 demo = gr.ChatInterface(
     fn=get_response,
     title="RAG Chatbot về Pittsburgh / CMU và VNU",
     description="Chatbot có khả năng truy vấn dữ liệu về Pittsburgh / CMU và VNU",
     examples=examples,
     theme="soft",
+    type="messages",  # Sử dụng type thay vì message_type
 )
 
 
