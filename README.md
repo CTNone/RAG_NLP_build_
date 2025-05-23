@@ -54,42 +54,29 @@ api:
     token: "your-together-token" # Token từ Together AI
     model_id: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
 
-# Chroma Database
+# Database
 db_dir: "chroma_db"
 
 # Data Paths
-data_path: "data"
-data_subdirs:
-  - "DATA_VNU_en"
-  - "DATA_VNU_vn"
-  - "DATA_CMU_Pit"
+data_path: "data" # Folder chứa các dữ liệu cần thiết
+
+data_prefix: "DATA_" # Prefix để tự động tìm các thư mục dữ liệu
+
+# Test Questions and Answers Paths
+test_questions_dir: "data/test_questions"
+test_answers_dir: "data/test_answers"
 
 # Model Parameters
-max_new_tokens: 512
-temperature: 0.1
-top_p: 0.95
-repetition_penalty: 1.15
+max_new_tokens: Số lượng token tối đa mà model có thể sinh ra trong câu trả lời
+temperature: Độ ngẫu nhiên trong câu trả lời (0.0-1.0, càng thấp càng ổn định)
+top_p: Ngưỡng xác suất tích lũy để chọn token tiếp theo (0.0-1.0)
+repetition_penalty: Hệ số phạt cho việc lặp lại từ/cụm từ (>1.0 để giảm lặp lại)
 
 # RAG Settings
-retriever_k: 3
+retriever_k: Số lượng đoạn văn bản truy xuất cho mỗi câu hỏi
 
 # Prompt Template
-template: |
-  <s>[INST] <<SYS>>
-  You are a direct answer bot. Your only job is to provide concise answers.
-  - Answer in the SAME LANGUAGE as the question (English or Vietnamese)
-  - Never explain your reasoning
-  - Keep answers brief and focused on key information
-  - If the answer is a name, date, number, or place, just state it directly
-  - Only use information provided in the context
-  <</SYS>>
-
-  Information:
-  {context}
-
-  Question: {question}
-
-  Answer: [/INST]
+template:
 ```
 
 ## Chuẩn bị dữ liệu
@@ -113,10 +100,9 @@ Mỗi file JSON trong thư mục `segmented/` phải có cấu trúc sau:
 
 ```json
 {
-  "url": "https://example.com/source-page", // URL nguồn (tùy chọn)
-  "title": "Tiêu đề trang", // Tiêu đề (tùy chọn)
+  "url": "https://example.com/source-page",
+  "title": "Tiêu đề trang",
   "chunks": [
-    // Mảng các đoạn văn bản
     "Đoạn văn bản thứ nhất...",
     "Đoạn văn bản thứ hai...",
     "Đoạn văn bản thứ ba..."
