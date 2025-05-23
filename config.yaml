@@ -1,0 +1,44 @@
+# API Credentials
+api:
+  huggingface:
+    token: "hf_xxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
+    embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  together:
+    token: "tgp_xx_xxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
+    model_id: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
+
+# Database
+db_dir: "chroma_db"
+
+# Data Paths
+data_path: "data"
+
+# Đọc các folder Segmented ở trong các folder có bắt đầu bằng data_prefix thuộc folder data
+data_prefix: "DATA_" # Prefix để tự động tìm các thư mục dữ liệu
+
+# Model Parameters
+max_new_tokens: 256
+temperature: 0.3
+top_p: 0.95
+repetition_penalty: 1.15
+
+# RAG Settings
+retriever_k: 10
+
+# Prompt Template
+template: |
+  <s>[INST] <<SYS>>
+  You are a direct answer bot. Your only job is to provide concise answers.
+  - Answer in the SAME LANGUAGE as the question (English or Vietnamese)
+  - Never explain your reasoning
+  - Keep answers brief and focused on key information
+  - If the answer is a name, date, number, or place, just state it directly
+  - Only use information provided in the context
+  <</SYS>>
+
+  Information:
+  {context}
+
+  Question: {question}
+
+  Answer: [/INST]

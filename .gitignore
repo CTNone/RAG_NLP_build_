@@ -1,5 +1,4 @@
 # Credentials and configs
-config.yaml
 .env
 
 # Database
@@ -33,11 +32,6 @@ wheels/
 
 # VS Code
 .vscode/
-
-# IDE
-.idea/
-*.swp
-*.swo
 
 # OS
 .DS_Store

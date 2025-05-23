@@ -1,5 +1,4 @@
 import os
-import traceback
 from typing import List, Optional, Tuple
 
 import gradio as gr
@@ -17,18 +16,9 @@ app_db = None
 
 
 def load_chroma_db(config: dict) -> Chroma:
-    """Tải Chroma database
-
-    Args:
-        config: Cấu hình ứng dụng
-
-    Returns:
-        Chroma database đã tải
-    """
+    """Tải Chroma database"""
     db_path = config["db_dir"]
     embeddings_model = config["api"]["huggingface"]["embedding_model"]
-
-    # Cấu hình thiết bị
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Khởi tạo embeddings
@@ -43,63 +33,37 @@ def load_chroma_db(config: dict) -> Chroma:
 
 
 def retrieve_documents(query: str, k: int = 3) -> List[str]:
-    """Truy xuất các đoạn văn bản liên quan
-
-    Args:
-        query: Câu hỏi người dùng
-        k: Số lượng đoạn văn bản cần truy xuất
-
-    Returns:
-        Danh sách các đoạn văn bản liên quan
-    """
+    """Truy xuất các đoạn văn bản liên quan"""
     global app_db
-
     retriever = app_db.as_retriever(search_kwargs={"k": k})
     docs = retriever.get_relevant_documents(query)
 
-    contexts = []
-    for i, doc in enumerate(docs):
-        contexts.append(f"[{i+1}] {doc.page_content}")
-
+    contexts = [f"[{i+1}] {doc.page_content}" for i, doc in enumerate(docs)]
     print(f"Đã tìm thấy {len(docs)} đoạn văn bản liên quan")
+
+    # In ra các đoạn văn bản
+    for ctx in contexts:
+        print(f"\n{ctx}")
+
     return contexts
 
 
 def create_prompt(question: str, contexts: List[str]) -> str:
-    """Tạo prompt từ câu hỏi và context
-
-    Args:
-        question: Câu hỏi người dùng
-        contexts: Danh sách các đoạn văn bản liên quan
-
-    Returns:
-        Prompt hoàn chỉnh
-    """
+    """Tạo prompt từ câu hỏi và context"""
     global app_config
-
     context_text = "\n\n".join(contexts)
     prompt_template = PromptTemplate.from_template(app_config["template"])
     return prompt_template.format(context=context_text, question=question)
 
 
 def call_llm_api(prompt: str, history: Optional[List[Tuple[str, str]]] = None) -> str:
-    """Gọi API LLM để lấy phản hồi
-
-    Args:
-        prompt: Prompt hoàn chỉnh
-        history: Lịch sử chat (tùy chọn)
-
-    Returns:
-        Phản hồi từ LLM
-    """
+    """Gọi API LLM để lấy phản hồi"""
     global app_config
 
-    together_api_key = app_config["api"]["together"]["token"]
-    model_id = app_config["api"]["together"]["model_id"]
-
-    # Khởi tạo client
-    os.environ["TOGETHER_API_KEY"] = together_api_key
+    # Thiết lập API
+    os.environ["TOGETHER_API_KEY"] = app_config["api"]["together"]["token"]
     client = Together()
+    model_id = app_config["api"]["together"]["model_id"]
 
     # Chuẩn bị messages từ lịch sử chat
     messages = []
@@ -129,15 +93,7 @@ def call_llm_api(prompt: str, history: Optional[List[Tuple[str, str]]] = None) -
 
 
 def get_response(message: str, history=None) -> str:
-    """Xử lý câu hỏi và tạo câu trả lời với RAG
-
-    Args:
-        message: Câu hỏi người dùng
-        history: Lịch sử chat (tùy chọn)
-
-    Returns:
-        Câu trả lời
-    """
+    """Xử lý câu hỏi và tạo câu trả lời với RAG"""
     global app_config, app_db
 
     try:
@@ -145,30 +101,19 @@ def get_response(message: str, history=None) -> str:
         if not app_config or not app_db:
             return "Lỗi: Tài nguyên chưa được tải. Hãy khởi động lại ứng dụng."
 
-        # Lấy các tham số cấu hình
-        retriever_k = app_config["retriever_k"]
-
         # Thực hiện truy vấn RAG
         print(f"Truy vấn: '{message}'")
-        contexts = retrieve_documents(message, retriever_k)
+        contexts = retrieve_documents(message, app_config["retriever_k"])
         prompt = create_prompt(message, contexts)
-        response = call_llm_api(prompt, history)
-
-        return response
+        return call_llm_api(prompt, history)
 
     except Exception as e:
-        error_msg = f"Lỗi: {str(e)}\n"
-        print(error_msg)
-        print(traceback.format_exc())
+        print(f"Lỗi: {str(e)}")
         return f"Xin lỗi, có lỗi xảy ra: {str(e)}"
 
 
 def initialize_app() -> bool:
-    """Khởi tạo ứng dụng và tải tài nguyên
-
-    Returns:
-        True nếu khởi tạo thành công, False nếu thất bại
-    """
+    """Khởi tạo ứng dụng và tải tài nguyên"""
     global app_config, app_db
 
     try:
@@ -188,23 +133,24 @@ def initialize_app() -> bool:
 
     except Exception as e:
         print(f"Lỗi khởi tạo: {str(e)}")
-        print(traceback.format_exc())
         return False
 
 
-# Tạo giao diện Gradio
+# Khởi tạo giao diện Gradio
+examples = [
+    "What bank, which is the 5th largest in the US, is based in Pittsburgh?",
+    "How many neighborhoods does Pittsburgh have?",
+    "Who is Pittsburgh named after?",
+    "What famous vaccine was developed at University of Pittsburgh in 1955?",
+    "DHGQHN được thành lập khi nào?",
+    "VNU-USSH được thành lập khi nào",
+]
+
 demo = gr.ChatInterface(
     fn=get_response,
     title="RAG Chatbot về Pittsburgh / CMU và VNU",
     description="Chatbot có khả năng truy vấn dữ liệu về Pittsburgh / CMU và VNU",
-    examples=[
-        "What bank, which is the 5th largest in the US, is based in Pittsburgh?",
-        "How many neighborhoods does Pittsburgh have?",
-        "Who is Pittsburgh named after?",
-        "What famous vaccine was developed at University of Pittsburgh in 1955?",
-        "DHGQHN được thành lập khi nào?",
-        "VNU-USSH được thành lập khi nào",
-    ],
+    examples=examples,
     theme="soft",
 )
 
