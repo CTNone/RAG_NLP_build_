@@ -1,5 +1,9 @@
 import os
+import warnings
 from typing import List, Optional, Tuple
+
+# Tắt cảnh báo của TensorFlow
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # 0 = all messages, 3 = ERROR
 
 import gradio as gr
 
