@@ -2,15 +2,15 @@
 
 Chatbot sử dụng kỹ thuật Retrieval Augmented Generation (RAG) để trả lời câu hỏi về Pittsburgh / Carnegie Mellon University (CMU) và VNU. Hệ thống sử dụng:
 
-- Together AI API cho Large Language Model
-- Hugging Face cho Embedding Model
+- Together AI API cho Large Language Model (LLM) : meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
+- Hugging Face cho Embedding Model : intfloat/multilingual-e5-large-instruct
 - ChromaDB làm vector database
 
 ## Yêu cầu
 
 - Python 3.8+
 - CUDA (tùy chọn, để tăng tốc embedding)
-- Token từ Together AI và Hugging Face (hướng dẫn bên dưới)
+- Token từ Together AI và Hugging Face ([xem phần "Đăng ký và lấy API Token" bên dưới](#đăng-ký-và-lấy-api-token))
 
 ## Đăng ký và lấy API Token
 
@@ -28,12 +28,14 @@ Chatbot sử dụng kỹ thuật Retrieval Augmented Generation (RAG) để tr�
 3. Vào [Settings > Access Tokens](https://huggingface.co/settings/tokens)
 4. Tạo token mới với quyền "read"
 
-## Cài đặt
+## Chạy Chatbot
+
+### Chuẩn bị môi trường
 
 1. Clone repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/CTNone/RAG_NLP_build_
 ```
 
 2. Cài đặt các thư viện:
@@ -42,7 +44,55 @@ git clone <repository-url>
 pip install -r requirements.txt
 ```
 
-3. Tùy chỉnh nội dung file `config.yaml` sao cho phù hợp:
+### Chuẩn bị dữ liệu
+
+Để bắt đầu nhanh:
+
+- Tải bộ dữ liệu mẫu: [Google Drive](https://drive.google.com/drive/folders/1HyPEjdltjOFRn8SYzfzeidlfYggqiVnZ?usp=sharing)
+
+Hoặc tự chuẩn bị dữ liệu theo [hướng dẫn bên dưới](#tự-chuẩn-bị-dữ-liệu)
+
+#### Tự chuẩn bị dữ liệu
+
+Các folder dữ liệu thường được bắt đầu bằng "DATA\_" và có folder "segmented" như sau:
+
+```
+data/
+├── DATA_CMU_Pit/
+│   └── segmented/
+│       ├── about_cmu.json
+│       ├── campus_life.json
+│       └── ...
+├── ...
+
+```
+
+Mỗi file JSON trong thư mục `segmented/` phải có cấu trúc sau:
+
+```json
+{
+  "url": "https://example.com/source-page",
+  "title": "Tiêu đề trang",
+  "chunks": [
+    "Đoạn văn bản thứ nhất...",
+    "Đoạn văn bản thứ hai...",
+    "Đoạn văn bản thứ ba..."
+  ]
+}
+```
+
+### Chuẩn bị tham số
+
+Tùy chỉnh nội dung file `config.yaml` sao cho phù hợp:
+Nếu muốn tùy chỉnh embedding nhanh hơn hoặc phù hợp cấu hình máy tính. Hãy thử một số model embedding sau:
+
+- sentence-transformers/all-MiniLM-L6-v2 (22.7M params)
+- BAAI/bge-small-en-v1.5 (33.4M params)
+- BAAI/bge-base-en-v1.5 (109M params)
+- sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 (118M params)
+- BAAI/bge-m3
+- ...
+  Hoặc giữ nguyên Model intfloat/multilingual-e5-large (560M params)
 
 ```yaml
 # API Credentials
@@ -79,52 +129,21 @@ retriever_k: Số lượng đoạn văn bản truy xuất cho mỗi câu hỏi
 template:
 ```
 
-## Chuẩn bị dữ liệu
+### Chạy thui nào !
 
-### 1. Cấu trúc thư mục
-
-```
-data/
-├── DATA_CMU_Pit/
-│   └── segmented/
-│       ├── about_cmu.json
-│       ├── campus_life.json
-│       └── ...
-├── ...
-
-```
-
-### 2. Cấu trúc file JSON
-
-Mỗi file JSON trong thư mục `segmented/` phải có cấu trúc sau:
-
-```json
-{
-  "url": "https://example.com/source-page",
-  "title": "Tiêu đề trang",
-  "chunks": [
-    "Đoạn văn bản thứ nhất...",
-    "Đoạn văn bản thứ hai...",
-    "Đoạn văn bản thứ ba..."
-  ]
-}
-```
-
-### 3. Tạo vector database
+#### Tạo vector Database
 
 ```bash
 python create_chroma_db.py
 ```
 
-## Chạy Chatbot
-
-1. Khởi động ứng dụng:
+#### Khởi động ứng dụng Chatbot:
 
 ```bash
 python app.py
 ```
 
-2. Truy cập giao diện web:
+#### Truy cập giao diện web:
 
 - Mở trình duyệt và truy cập địa chỉ hiển thị trong terminal (thường là http://127.0.0.1:7860)
 - Bắt đầu đặt câu hỏi về Pittsburgh / CMU và VNU!
