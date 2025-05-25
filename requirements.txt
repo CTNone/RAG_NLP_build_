@@ -1,6 +1,8 @@
 # Core dependencies
 langchain>=0.1.0  # Cho PromptTemplate và Document
 langchain-community>=0.0.10  # Cho HuggingFaceEmbeddings
+langchain-core>=0.1.0  # Cho các thành phần cốt lõi
+langchain-chroma>=0.1.0  # Cho ChromaDB integration
 chromadb>=0.4.13  # Vector database
 
 # Model và embeddings
@@ -10,7 +12,11 @@ huggingface-hub>=0.17.1  # Cho việc tải model và login
 together>=0.2.5  # Cho Together AI API
 
 # UI và tiện ích
-gradio>=5.0.1  # Cho giao diện web
-pyyaml>=6.0  # Cho đọc file config
-tqdm>=4.65.0  # Cho thanh tiến trình khi tạo DB
-pandas>=2.0.0  # Cho xử lý dữ liệu CSV
+gradio>=5.0.1  # Giao diện web
+pyyaml>=6.0  # Đọc file config
+tqdm>=4.65.0  # Progress bar
+pandas>=2.0.0  # Xử lý CSV
+
+# Dependencies thiết yếu (được import ngầm)
+pydantic>=2.0.0  # Sử dụng bởi ChromaDB và LangChain
+typing-extensions>=4.5.0  # Typing hints
