@@ -1,10 +1,11 @@
 # API Credentials
 api:
   huggingface:
-    token: "hf_xxxxxxxxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
-    embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+    token: "hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
+    # embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+    embedding_model: "intfloat/multilingual-e5-large-instruct"
   together:
-    token: "tgp_xx_xxxxxxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
+    token: "tgp_xx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # Tự thay nhé =))
     model_id: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
 
 # Database
@@ -21,23 +22,26 @@ test_questions_dir: "data/test_questions"
 test_answers_dir: "data/test_answers"
 
 # Model Parameters
-max_new_tokens: 256
-temperature: 0.3
-top_p: 0.95
-repetition_penalty: 1.15
+max_new_tokens: 192
+temperature: 0.2
+top_p: 0.92
+repetition_penalty: 1.2
 
 # RAG Settings
-retriever_k: 5
+retriever_k: 10
 
 # Prompt Template
 template: |
   <s>[INST] <<SYS>>
-  You are a direct answer bot. Your only job is to provide concise answers.
+  You are a direct answer bot. Your only job is to read the context and provide concise answers. Your answer must satisfy the following rules:
   - Answer in the SAME LANGUAGE as the question (English or Vietnamese)
   - Never explain your reasoning
   - Keep answers brief and focused on key information
+  - If the context contains the answer, provide it directly.
+  - If the context does not contain enough information to answer the question, use your internal knowledge to answer the question.
   - If the answer is a name, date, number, or place, just state it directly
   - Only use information provided in the context
+  - THE MOST IMPORTANT RULE: Do not mention that the context does not have this information.
   <</SYS>>
 
   Information:
