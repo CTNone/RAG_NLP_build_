@@ -1,22 +1,24 @@
 # Core dependencies
-langchain>=0.1.0  # Cho PromptTemplate và Document
-langchain-community>=0.0.10  # Cho HuggingFaceEmbeddings
-langchain-core>=0.1.0  # Cho các thành phần cốt lõi
-langchain-chroma>=0.1.0  # Cho ChromaDB integration
-chromadb>=0.4.13  # Vector database
+langchain>=0.1.0                      # PromptTemplate và Document
+langchain-core>=0.1.0                 # Các thành phần cốt lõi
+langchain-chroma>=0.1.0               # ChromaDB integration
+langchain-huggingface>=0.1.0          # HuggingFaceEmbeddings (thay thế langchain-community)
+chromadb>=0.4.13                      # Vector database
 
 # Model và embeddings
-torch>=2.0.0  # Cho HuggingFaceEmbeddings
-sentence-transformers>=2.2.2  # Cho embeddings model
-huggingface-hub>=0.17.1  # Cho việc tải model và login
-together>=0.2.5  # Cho Together AI API
+torch>=2.0.0                          # Cho HuggingFaceEmbeddings (CPU/GPU)
+sentence-transformers>=2.2.2          # Cho embeddings model
+huggingface-hub>=0.17.1               # Tải model và login HuggingFace
+
+# (OpenRouter dùng REST API qua urllib.request, không cần package riêng)
+# (Together AI không còn được dùng, đã chuyển sang OpenRouter)
 
 # UI và tiện ích
-gradio>=5.0.1  # Giao diện web
-pyyaml>=6.0  # Đọc file config
-tqdm>=4.65.0  # Progress bar
-pandas>=2.0.0  # Xử lý CSV
+gradio>=5.0.1                         # Giao diện web
+pyyaml>=6.0                           # Đọc file config YAML
+tqdm>=4.65.0                          # Progress bar
+pandas>=2.0.0                         # Xử lý CSV (test questions/answers)
 
-# Dependencies thiết yếu (được import ngầm)
-pydantic>=2.0.0  # Sử dụng bởi ChromaDB và LangChain
-typing-extensions>=4.5.0  # Typing hints
+# Dependencies thiết yếu (import ngầm)
+pydantic>=2.0.0                       # Sử dụng bởi ChromaDB và LangChain
+typing-extensions>=4.5.0              # Typing hints

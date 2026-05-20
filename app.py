@@ -47,8 +47,12 @@ def initialize_app() -> bool:
             return False
 
         print("Đã tải config:")
-        print(f"- Model: {app_config['api']['together']['model_id']}")
-        print(f"- Embedding: {app_config['api']['huggingface']['embedding_model']}")
+        provider = app_config.get("api", {}).get("provider", "together")
+        provider_cfg = app_config.get("api", {}).get(provider, {})
+        model_id = provider_cfg.get("model_id", "unknown")
+        print(f"- Provider: {provider}")
+        print(f"- Model: {model_id}")
+        print(f"- Embedding: {app_config.get('api', {}).get('huggingface', {}).get('embedding_model', 'unknown')}")
 
         # Tải Chroma database
         app_db = load_chroma_db(app_config)
@@ -75,8 +79,8 @@ demo = gr.ChatInterface(
     title="RAG Chatbot về Pittsburgh / CMU và VNU",
     description="Chatbot có khả năng truy vấn dữ liệu về Pittsburgh / CMU và VNU",
     examples=examples,
-    theme="soft",
-    type="messages",  # Sử dụng type thay vì message_type
+    # theme="soft",
+    # type="messages",  # Sử dụng type thay vì message_type
 )
 
 

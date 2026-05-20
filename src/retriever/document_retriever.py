@@ -2,16 +2,24 @@ import json
 import os
 from typing import List
 
-from langchain.schema import Document
+# from langchain_core.schema import Document
+from langchain_core.documents import Document
 
 
 def retrieve_documents(db, query: str, k: int = 3) -> List[str]:
     """Truy xuất các đoạn văn bản liên quan"""
-    retriever = db.as_retriever(search_kwargs={"k": k})
+    retriever = db.as_retriever(
+        search_type="mmr",                          # ← MMR thay vì similarity
+        search_kwargs={"k": k, "fetch_k": 20}       # fetch 20, chọn 10 đa dạng
+    )
     docs = retriever.invoke(query)
-
     contexts = [f"[{i+1}] {doc.page_content}" for i, doc in enumerate(docs)]
     return contexts
+    # retriever = db.as_retriever(search_kwargs={"k": k})
+    # docs = retriever.invoke(query)
+
+    # contexts = [f"[{i+1}] {doc.page_content}" for i, doc in enumerate(docs)]
+    # return contexts
 
 
 def load_json_documents(file_path: str) -> List[Document]:
