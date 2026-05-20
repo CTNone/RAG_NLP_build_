@@ -17,7 +17,7 @@ huggingface-hub>=0.17.1               # Tải model và login HuggingFace
 gradio>=5.0.1                         # Giao diện web
 pyyaml>=6.0                           # Đọc file config YAML
 tqdm>=4.65.0                          # Progress bar
-pandas>=2.0.0                         # Xử lý CSV (test questions/answers)
+
 
 # Dependencies thiết yếu (import ngầm)
 pydantic>=2.0.0                       # Sử dụng bởi ChromaDB và LangChain

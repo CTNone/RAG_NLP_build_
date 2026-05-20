@@ -1,13 +1,13 @@
 # API Credentials
-# ⚠️ THAY CÁC TOKEN DƯỚI ĐÂY BẰNG TOKEN THẬT CỦA BẠN TRƯỚC KHI CHẠY
-# Không commit file này với token thật lên GitHub (secret scanning sẽ chặn)
+# Do not store real tokens in this file. Set them via environment variables
+# or copy .env.example to .env for local development.
 api:
   provider: "openrouter"
   huggingface:
-    token: "YOUR_HUGGINGFACE_TOKEN_HERE"  # Thay bằng HuggingFace token của bạn
+    token: ""
     embedding_model: "intfloat/multilingual-e5-large-instruct"
   openrouter:
-    token: "YOUR_OPENROUTER_TOKEN_HERE"   # Thay bằng OpenRouter token của bạn
+    token: ""
     model_id: "openrouter/owl-alpha"
 
 # Database
@@ -30,24 +30,33 @@ top_p: 0.92
 repetition_penalty: 1.2
 
 # RAG Settings
-retriever_k: 10
+retriever_k: 5
+
+# Debug logging
+debug: false
+
+# Retrieval tuning
+retriever_fetch_k: 20        # candidates to consider
+
+# Context budget (approx by characters)
+context:
+  max_chars: 6000
+  max_chars_per_chunk: 1500
 
 # Prompt Template
 template: |
-  <s>[INST] <<SYS>>
-  You are a direct answer bot. Your only job is to read the context and provide concise answers. Your answer must satisfy the following rules:
+  You are a direct answer bot. Your only job is to read the provided context and provide concise answers. Your answer must satisfy the following rules:
   - Answer in the SAME LANGUAGE as the question (English or Vietnamese)
   - Never explain your reasoning
   - Keep answers brief and focused on key information
   - If the context contains the answer, provide it directly.
-  - If the context does not contain enough information to answer the question, use your internal knowledge to answer the question.
+  - If the context does not contain enough information to answer the question, reply EXACTLY with: "I do not have enough information from the provided context."
   - If the answer is a name, date, number, or place, just state it directly
   - Only use information provided in the context
-  - THE MOST IMPORTANT RULE: Do not mention that the context does not have this information.
-  <</SYS>>
+  - Include source citations like [1], [2] when the answer uses retrieved context. If you provide an answer from the context, you MUST include at least one citation.
 
   Information: {context}
 
   Question: {question}
 
-  Answer: [/INST]
+  Answer:

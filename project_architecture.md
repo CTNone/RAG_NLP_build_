@@ -1,292 +1,241 @@
 # Kiến trúc dự án RAG_NLP_build_
 
-## 1. Sơ đồ tổng quan (Pipeline)
+Tài liệu này mô tả chi tiết kiến trúc hiện tại của dự án RAG (Retrieval-Augmented Generation) dành cho dữ liệu về CMU/Pittsburgh và VNU (Đại học Quốc gia Hà Nội).
 
+---
+
+## 1. Cấu trúc thư mục dự án (Project Directory Structure)
+
+Dưới đây là sơ đồ cấu trúc của dự án sau khi phân tích mã nguồn:
+
+```text
+RAG_NLP_build_/
+├── chroma_db/                  # Vector database (Chroma DB - được tạo sau khi chạy script)
+│   └── chroma.sqlite3          # File SQLite3 lưu trữ vector dữ liệu
+├── data/                       # Thư mục chứa dữ liệu
+│   ├── DATA_CMU_Pit/           # Dữ liệu về Pittsburgh & CMU (English)
+│   │   ├── doc_*.json          # File raw dữ liệu cào
+│   │   └── cleaned/            # Thư mục chứa các file JSON đã làm sạch
+│   ├── DATA_VNU_en/            # Dữ liệu về VNU bằng tiếng Anh (đã segmented)
+│   │   └── segmented/*.json    # Chunks đã phân đoạn sẵn để nhúng (embed)
+│   ├── DATA_VNU_vn/            # Dữ liệu về VNU bằng tiếng Việt (đã segmented)
+│   │   └── segmented/*.json    # Chunks đã phân đoạn sẵn để nhúng (embed)
+│   ├── test_questions/         # Chứa các file CSV câu hỏi kiểm thử (ví dụ: test_questions_mẫu.csv)
+│   └── test_answers/           # Thư mục tự động tạo chứa câu trả lời đầu ra (.csv)
+├── src/                        # Thư mục mã nguồn cốt lõi (Core Modules)
+│   ├── __init__.py             # Export các hàm chính
+│   ├── database/
+│   │   ├── __init__.py
+│   │   └── chroma_db.py        # Quản lý tải và tạo cơ sở dữ liệu vector
+│   ├── llm/
+│   │   ├── __init__.py
+│   │   └── api.py              # Xử lý Prompt và gọi API OpenRouter / Together
+│   ├── retriever/
+│   │   ├── __init__.py
+│   │   └── document_retriever.py # Truy xuất tài liệu (MMR) và đọc file JSON segmented
+│   └── utils/
+│       ├── __init__.py
+│       └── config_loader.py    # Đọc file cấu hình config.yaml
+├── Clean_data.ipynb            # Notebook xử lý và làm sạch dữ liệu raw
+├── craw_data_from_web.ipynb    # Notebook cào dữ liệu từ Wikipedia và các nguồn khác
+├── create_chroma_db.py         # Script tạo/lập chỉ mục Vector DB từ các folder dữ liệu segmented
+├── answer_questions.py         # Script kiểm thử/trả lời câu hỏi hàng loạt từ file CSV
+├── app.py                      # Ứng dụng web chatbot tương tác (sử dụng Gradio)
+├── config.yaml                 # File cấu hình tập trung (API key, model parameters, RAG settings)
+├── requirements.txt            # Danh sách thư viện Python phụ thuộc
+└── README.md                   # Hướng dẫn sử dụng dự án
 ```
+
+---
+
+## 2. Sơ đồ Pipeline Tổng quan (System Pipeline)
+
+Kiến trúc của dự án được chia làm 3 giai đoạn độc lập nhưng liên kết chặt chẽ với nhau:
+
+```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         GIAI ĐOẠN 1: TẠO DỮ LIỆU                           │
-│                     (create_chroma_db.py - chạy 1 lần)                      │
+│                       GIAI ĐOẠN 1: TẠO VÀ LƯU VECTOR DB                    │
+│                      (Chạy script: create_chroma_db.py)                      │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  data/                                                                      │
-│  ├── DATA_CMU_Pit/ (dữ liệu về Pittsburgh & CMU)                          │
-│  │   ├── doc_*.json (raw)                                                  │
-│  │   └── cleaned/doc_*_cleaned.json (đã làm sạch)                         │
-│  ├── DATA_VNU_vn/ (dữ liệu về VNU - tiếng Việt)                          │
-│  │   └── segmented/*.json (đã chunk)                                      │
-│  └── DATA_VNU_en/ (dữ liệu về VNU - tiếng Anh)                           │
-│       └── segmented/*.json (đã chunk)                                     │
+│  Dữ liệu JSON trong data/DATA_*/segmented/                                  │
+│         │                                                                   │
+│         ▼                                                                   │
+│  load_json_documents() ─────────────────> Trả về danh sách LangChain Document │
+│  (document_retriever.py)                (Kèm metadata: title, url, chunk_id)│
+│                                                     │                       │
+│                                                     ▼                       │
+│  create_vector_db() <───────────────────────────────┘                       │
+│  (chroma_db.py)                                                             │
+│         │                                                                   │
+│         ├─ Embedding model: HuggingFaceEmbeddings                           │
+│         │  (intfloat/multilingual-e5-large-instruct)                       │
+│         │                                                                   │
+│         ▼                                                                   │
+│  Lưu trữ vật lý xuống thư mục chroma_db/ (sqlite)                           │
 │                                                                             │
-│  ┌──────────────────────────────┐                                          │
-│  │ load_json_documents()       │ ← Đọc từng file JSON, parse chunks       │
-│  │ (document_retriever.py:18)  │   → List[Document] (langchain)            │
-│  └──────────────┬──────────────┘                                          │
-│                 │                                                          │
-│                 ▼                                                          │
-│  ┌──────────────────────────────┐                                          │
-│  │ HuggingFaceEmbeddings()      │ ← intfloat/multilingual-e5-large-instruct│
-│  │ (chroma_db.py:17)           │                                            │
-│  └──────────────┬──────────────┘                                            │
-│                 │                                                          │
-│                 ▼                                                          │
-│  ┌──────────────────────────────┐                                          │
-│  │ Chroma.from_documents()     │ → chroma_db/ (vector store)              │
-│  │ (chroma_db.py:37)          │                                            │
-│  └──────────────────────────────┘                                          │
-│                                                                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                     GIAI ĐOẠN 2: CHẠY CHATBOT                              │
-│                     (python app.py - mỗi lần dùng)                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    GIAI ĐOẠN 2: CHATBOT TƯƠNG TÁC TRỰC TUYẾN                │
+│                        (Chạy ứng dụng: app.py)                              │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  ┌──────────────────────────────┐                                          │
-│  │ load_config("config.yaml")  │ ← Đọc: provider, model, token, template │
-│  │ (config_loader.py:7)        │                                            │
-│  └──────────────┬──────────────┘                                            │
-│                 │                                                          │
-│                 ▼                                                          │
-│  ┌──────────────────────────────┐                                          │
-│  │ load_chroma_db(config)      │ ← Load Chroma từ chroma_db/              │
-│  │ (chroma_db.py:10)           │   + HuggingFaceEmbeddings                │
-│  └──────────────┬──────────────┘                                            │
-│                 │                                                          │
-│                 ▼                                                          │
-│  ┌────────── CHAT LOOP (Gradio) ──────────────────────────────────┐       │
-│  │                                                                │       │
-│  │  User: "DHGQHN được thành lập khi nào?"                        │       │
-│  │         │                                                      │       │
-│  │         ▼                                                      │       │
-│  │  ┌──────────────────────┐                                      │       │
-│  │  │ retrieve_documents()│ ← Similarity/MMR search trong Chroma │       │
-│  │  │ (document_retriever:9)│   fetch_k=20, chọn k=10 docs      │       │
-│  │  └──────────┬───────────┘                                      │       │
-│  │             │ → List[str] contexts (vd: 10 đoạn text)           │       │
-│  │             ▼                                                  │       │
-│  │  ┌──────────────────────┐                                      │       │
-│  │  │ create_prompt()     │ ← PromptTemplate + {context,question}│       │
-│  │  │ (api.py:16)          │   → str prompt (formatted)           │       │
-│  │  └──────────┬───────────┘                                      │       │
-│  │             │                                                  │       │
-│  │             ▼ (gửi đến LLM)                                   │       │
-│  │  ┌──────────────────────┐                                      │       │
-│  │  │ call_llm_api()      │                                      │       │
-│  │  │ (api.py:105)         │                                      │       │
-│  │  │  provider?           │                                      │       │
-│  │  │  ├─ openrouter ──→ _call_openrouter() → OpenAI API         │       │
-│  │  │  └─ together ──→ _call_together() → Together.ai API       │       │
-│  │  └──────────┬───────────┘                                      │       │
-│  │             │ → str response                                  │       │
-│  │             ▼                                                  │       │
-│  │  Trả về Gradio UI → User thấy câu trả lời                    │       │
-│  │                                                                │       │
-│  └────────────────────────────────────────────────────────────────┘       │
+│  [Giao diện Gradio ChatInterface]                                           │
+│         │                                                                   │
+│  User gửi: Question                                                         │
+│         │                                                                   │
+│         ▼                                                                   │
+│  retrieve_documents() ──> Truy vấn Chroma DB (Thuật toán MMR)                │
+│                           Lấy k = 10 tài liệu từ fetch_k = 20 ứng viên      │
+│                                 │                                           │
+│                                 ▼                                           │
+│  create_prompt() <──────────────┘                                           │
+│  Format prompt theo Template cấu hình (Llama / ChatML Format)               │
+│         │                                                                   │
+│         ▼                                                                   │
+│  call_llm_api() ────────> Chọn API Provider (OpenRouter / Together)          │
+│                           Gửi kèm prompt và lịch sử hội thoại (history)     │
+│                                 │                                           │
+│                                 ▼                                           │
+│  Trả về câu trả lời cho User trên Gradio UI                                 │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    GIAI ĐOẠN 3: KIỂM THỬ HÀNG LOẠT QUA FILE CSV             │
+│                    (Chạy script: answer_questions.py)                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  Đọc danh sách câu hỏi từ CSV trong data/test_questions/                    │
+│         │                                                                   │
+│         ▼                                                                   │
+│  Duyệt qua từng câu hỏi:                                                    │
+│    - Gọi retrieve_documents() từ DB                                         │
+│    - Tạo prompt tương ứng qua create_prompt()                               │
+│    - Gọi LLM qua call_llm_api() để lấy câu trả lời                          │
+│         │                                                                   │
+│         ▼                                                                   │
+│  Lưu toàn bộ cặp Question-Answer vào file CSV mới trong data/test_answers/   │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 2. Chi tiết các file & hàm
+## 3. Chi tiết các file & API chính
 
-### 📄 `app.py` — Entry point (Giao diện Gradio)
+### 📄 `app.py` — Giao diện Chatbot Gradio
+* **`initialize_app()`** (Dòng 38-63): Đọc file `config.yaml`, xác định provider, in thông tin cấu hình và tải cơ sở dữ liệu Chroma DB vào bộ nhớ toàn cục.
+* **`get_response(message, history)`** (Dòng 18-35): Nhận tin nhắn từ giao diện, thực hiện truy xuất tài liệu liên quan, dựng prompt và gọi API để lấy câu trả lời.
+* **`demo = gr.ChatInterface(...)`** (Dòng 77-84): Thiết lập giao diện trò chuyện Gradio với các câu hỏi mẫu gợi ý (ví dụ về Pittsburgh, CMU và VNU).
 
-| Hàm | Dòng | Chức năng |
-|-----|------|-----------|
-| `initialize_app()` | 38-63 | Khởi tạo: load config, load Chroma DB |
-| `get_response(message, history)` | 18-35 | Xử lý 1 câu hỏi: retrieve → prompt → LLM |
-| `demo = gr.ChatInterface(...)` | 77-84 | Tạo giao diện Gradio với examples |
+### 📄 `create_chroma_db.py` — Khởi tạo Vector Database
+* **`main()`** (Dòng 17-124):
+  1. Tải cấu hình và cấu hình thiết bị phần cứng (Ưu tiên CUDA GPU nếu có, ngược lại dùng CPU).
+  2. Tự động quét và tìm các thư mục chứa tiền tố `DATA_` trong thư mục `data`.
+  3. Quét đệ quy tất cả các file `.json` trong thư mục con `segmented/`.
+  4. Đọc dữ liệu thô và chuyển thành danh sách các đối tượng `Document`.
+  5. Kiểm tra sự tồn tại của database: Nếu có sẵn, script sẽ hỏi người dùng có muốn ghi đè (`y/n`) hay không. Nếu có hoặc chưa tồn tại, nó sẽ thực hiện khởi tạo và ghi đè mới.
 
-**Luồng dữ liệu trong 1 request:**
+### 📄 `answer_questions.py` — Đánh giá & Trả lời câu hỏi hàng loạt
+* **`load_questions_from_csv(file_path)`** (Dòng 23-36): Đọc cột đầu tiên của file CSV chứa câu hỏi để xử lý.
+* **`get_answer(question, db, config)`** (Dòng 39-55): Đóng gói luồng RAG cơ bản (Truy xuất -> Tạo prompt -> Gọi API).
+* **`process_question_file(file_path, db, config)`** (Dòng 57-72): Lặp qua tập câu hỏi của file, gọi `get_answer` và dừng 0.5 giây giữa các lượt gọi (`time.sleep(0.5)`) để tránh bị rate limit từ API.
+* **`save_answers_to_csv(...)`** (Dòng 75-90): Ghi danh sách câu hỏi và câu trả lời sinh ra vào file định dạng CSV mới.
+* **`main()`** (Dòng 92-131): Đọc toàn bộ các file `.csv` từ thư mục `test_questions_dir` và lưu kết quả vào thư mục `test_answers_dir`.
+
+### 📄 `config.yaml` — Cấu hình tập trung
+* **`api.provider`**: Chọn provider API LLM (`"openrouter"` hoặc `"together"`).
+* **`api.huggingface`**: Cấu hình token HuggingFace và mô hình embedding (`intfloat/multilingual-e5-large-instruct`).
+* **`api.openrouter`**: Chứa token và model ID (mặc định: `openrouter/owl-alpha`).
+* **`db_dir`**, **`data_path`**, **`data_prefix`**: Cấu hình đường dẫn lưu trữ DB và thư mục chứa dữ liệu thô.
+* **`test_questions_dir`**, **`test_answers_dir`**: Đường dẫn cho script chạy thử nghiệm.
+* **Các tham số sinh văn bản**: `max_new_tokens` (192), `temperature` (0.2), `top_p` (0.92), `repetition_penalty` (1.2).
+* **Prompt Template**: Cấu hình sẵn prompt dạng Llama instruction.
+
+### 📄 `src/database/chroma_db.py` — Quản lý Vector DB
+* **`load_chroma_db(config)`** (Dòng 10-24): Tải mô hình embedding bằng thiết bị phù hợp, kết nối và trả về đối tượng `Chroma`.
+* **`create_vector_db(documents, db_path, embeddings_model, device)`** (Dòng 27-41): Sử dụng phương thức `Chroma.from_documents` để lưu trữ embeddings và văn bản trực tiếp xuống thư mục chỉ định trên ổ đĩa cứng.
+
+### 📄 `src/retriever/document_retriever.py` — Tìm kiếm tài liệu đa dạng
+* **`retrieve_documents(db, query, k)`** (Dòng 9-17): Sử dụng thuật toán truy xuất **MMR (Maximal Marginal Relevance)**.
+  * *Chi tiết:* Tìm kiếm `fetch_k = 20` đoạn văn bản có độ tương đồng cao nhất, sau đó chọn lọc ra `k = 10` đoạn có nội dung đa dạng nhất, tránh trùng lặp thông tin nhằm tối ưu hóa ngữ cảnh đưa vào LLM.
+* **`load_json_documents(file_path)`** (Dòng 25-54): Đọc dữ liệu từ file JSON phân đoạn, trích xuất danh sách `chunks` và gán metadata (`source`, `url`, `title`, `chunk_id`).
+* **`get_data_directories(base_path, prefix)`** (Dòng 57-66): Lọc ra các thư mục con bắt đầu bằng tiền tố thích hợp.
+
+### 📄 `src/llm/api.py` — Xử lý giao tiếp với LLM API
+* **`create_prompt(...)`** (Dòng 16-20): Ghép nối các ngữ cảnh được tìm thấy thành chuỗi văn bản và định dạng vào Prompt Template.
+* **`_prepare_messages(...)`** (Dòng 23-49): Chuyển đổi lịch sử chat (từ Gradio, hỗ trợ nhiều kiểu định dạng như tuple, list, dict) thành danh sách tin nhắn chuẩn OpenAI API `[{"role": "user/assistant", "content": "..."}]`.
+* **`_call_openrouter(...)`** (Dòng 52-85): Thực hiện gửi yêu cầu POST qua thư viện `urllib.request` đến API OpenRouter để lấy dữ liệu văn bản.
+* **`_call_together(...)`** (Dòng 88-104): Khởi tạo Client Together và gọi phương thức chat completions bằng thư viện SDK chính thức (`together`).
+* **`call_llm_api(...)`** (Dòng 107-113): Bộ định tuyến lựa chọn hàm xử lý tương ứng dựa trên cấu hình provider.
+
+### 📄 `src/utils/config_loader.py` — Trình tải file YAML
+* **`load_config(config_path)`** (Dòng 7-25): Đọc file YAML và nạp các biến cấu hình.
+
+---
+
+## 4. Chi tiết luồng dữ liệu (Data Flow details)
+
+### A. Quá trình Indexing Dữ liệu
+```text
+[File JSON Phân đoạn]
+       │
+       ▼ (Đọc cấu trúc file JSON)
+[Trích xuất chunks, url, title]
+       │
+       ▼ (Bọc bằng LangChain Document)
+[Document(page_content=chunk, metadata={source, url, title, chunk_id})]
+       │
+       ▼ (HuggingFaceEmbeddings: intfloat/multilingual-e5-large-instruct)
+[Vector embeddings biểu diễn ngữ nghĩa (768-dim)]
+       │
+       ▼ (Chroma.from_documents)
+[Lưu trữ xuống chroma_db/chroma.sqlite3]
 ```
-message → retrieve_documents() → contexts (List[str])
-                                    ↓
-                              create_prompt() → prompt (str)
-                                    ↓
-                              call_llm_api() → response (str)
-                                    ↓
-                              return response → Gradio UI
-```
 
-### 📄 `config.yaml` — Cấu hình
-
-| Key | Giá trị | Chức năng |
-|-----|---------|-----------|
-| `api.provider` | `"openrouter"` | Provider LLM hiện tại |
-| `api.openrouter.token` | `"sk-or-v1-..."` | API key OpenRouter |
-| `api.openrouter.model_id` | `"openrouter/owl-alpha"` | Model đang dùng |
-| `api.huggingface.embedding_model` | `"intfloat/multilingual-e5-large-instruct"` | Embedding model |
-| `retriever_k` | `10` | Số context trả về |
-| `template` | Llama format | Prompt template |
-
-### 📄 `src/__init__.py` — Module exports
-
-Export tất cả các hàm chính:
-- `load_config`, `load_chroma_db`, `create_vector_db`
-- `retrieve_documents`, `load_json_documents`, `get_data_directories`
-- `call_llm_api`, `create_prompt`
-
-### 📄 `src/utils/config_loader.py` — Đọc config
-
-| Hàm | Dòng | Chức năng |
-|-----|------|-----------|
-| `load_config(config_path)` | 7-25 | Đọc `config.yaml` → dict |
-
-### 📄 `src/database/chroma_db.py` — Vector Database
-
-| Hàm | Dòng | Chức năng |
-|-----|------|-----------|
-| `load_chroma_db(config)` | 10-24 | Load Chroma từ `chroma_db/` + embedding |
-| `create_vector_db(documents, db_path, ...)` | 27-39 | Tạo Chroma từ documents |
-
-**Đầu vào/ra:**
-- `load_chroma_db`: config → Chroma object
-- `create_vector_db`: List[Document] + path → lưu xuống disk
-
-### 📄 `src/retriever/document_retriever.py` — Truy vấn
-
-| Hàm | Dòng | Chức năng |
-|-----|------|-----------|
-| `retrieve_documents(db, query, k)` | 9-17 | Search Chroma → List[str] context |
-| `load_json_documents(file_path)` | 25-47 | Parse file JSON → List[Document] |
-| `get_data_directories(base_path, prefix)` | 57-66 | Tìm thư mục DATA_* |
-
-**Đầu vào/ra:**
-- `retrieve_documents`: Chroma DB + câu hỏi → 10 đoạn text
-
-### 📄 `src/llm/api.py` — Gọi API LLM
-
-| Hàm | Dòng | Chức năng |
-|-----|------|-----------|
-| `create_prompt(question, contexts, template)` | 16-20 | Format prompt từ template |
-| `_prepare_messages(history, prompt)` | 23-49 | Convert history → OpenAI message format |
-| `_call_openrouter(prompt, config, history)` | 52-83 | Gọi OpenRouter API (REST) |
-| `_call_together(prompt, config, history)` | 86-102 | Gọi Together API (SDK) |
-| `call_llm_api(prompt, config, history)` | 105-111 | Router: chọn provider |
-
-**Đầu vào/ra:**
-- `call_llm_api`: prompt string → response string
-
-### 📄 `create_chroma_db.py` — Script tạo DB (chạy 1 lần)
-
-**Luồng:**
-```
-1. load_config() → config dict
-2. get_data_directories() → [data/DATA_CMU_Pit, data/DATA_VNU_vn, data/DATA_VNU_en]
-3. Với mỗi thư mục:
-   a. Tìm all file .json trong **/segmented/**
-   b. Với mỗi file: load_json_documents() → Document[]
-4. Gộp tất cả Document → create_vector_db()
-5. → chroma_db/chroma.sqlite3 (vector store)
+### B. Quá trình sinh câu trả lời RAG
+```text
+               User Question (ví dụ: "ĐHQGHN thành lập khi nào?")
+                            │
+                            ▼
+            Chroma.as_retriever(search_type="mmr")
+                            │
+      ┌─────────────────────┴─────────────────────┐
+      ▼                                           ▼
+Lọc ra 20 ứng viên tương đồng nhất            Chọn ra 10 đoạn đa dạng nhất
+(Similarity Search)                           (Maximal Marginal Relevance)
+      │                                           │
+      └─────────────────────┬─────────────────────┘
+                            │
+                            ▼
+                    List[Context text]
+                            │
+                            ▼
+                     create_prompt()
+            (Format vào Prompt Template trong config)
+                            │
+                            ▼
+                      call_llm_api()
+            (Gọi OpenRouter API)
+                            │
+                            ▼
+                  [Câu trả lời trả về]
 ```
 
 ---
 
-## 3. Luồng dữ liệu chi tiết
+## 5. Các phát hiện & Vấn đề kỹ thuật cần lưu ý (Bug & Optimization Notes)
 
-### A. Từ file JSON → Chroma DB
+### 1. ✅ Đã sửa: Lỗi nạp biến môi trường cho Token HuggingFace trong `config_loader.py`
+* **Vấn đề trước đây:** Hàm `load_config` kiểm tra khóa `"huggingface_api_token"` ở cấp ngoài cùng của config, trong khi cấu trúc của YAML là lồng nhau (`config["api"]["huggingface"]["token"]`).
+* **Giải pháp đã thực hiện:** Sửa lại logic kiểm tra và gán vào đúng vị trí cấu hình lồng nhau. Bây giờ biến môi trường `HUGGINGFACEHUB_API_TOKEN` sẽ ghi đè chính xác token trong config nếu được khai báo.
 
-```
-File JSON (raw/cleaned/segmented)
-  │
-  ├── "url": "https://..."
-  ├── "title": "..."
-  ├── "content": "..." (full text)
-  └── "chunks": ["chunk1", "chunk2", ...] (đã chia nhỏ)
-       │
-       ▼
-load_json_documents()
-  → Document(page_content=chunk, metadata={source, url, title, chunk_id})
-       │
-       ▼
-HuggingFaceEmbeddings("intfloat/multilingual-e5-large-instruct")
-  → Vector embeddings (768-dim)
-       │
-       ▼
-Chroma.from_documents()
-  → chroma_db/chroma.sqlite3 (vector database)
-```
+### 2. ✅ Đã xử lý: Lỗi KeyError: 'together' (Đã loại bỏ Together AI)
+* **Vấn đề trước đây:** Hàm `call_llm_api` hỗ trợ provider `"together"` nhưng `config.yaml` không khai báo thông số kết nối, dẫn đến lỗi `KeyError: 'together'`.
+* **Giải pháp đã thực hiện:** Do dự án không còn sử dụng Together AI, toàn bộ logic import, hàm `_call_together` và tùy chọn provider `"together"` đã được loại bỏ hoàn toàn khỏi mã nguồn (`api.py` và `app.py`). Hệ thống mặc định sử dụng OpenRouter.
 
-### B. Từ câu hỏi → Câu trả lời
-
-```
-User: "DHGQHN được thành lập khi nào?"
-       │
-       ▼
-retrieve_documents(db, query, k=10)
-  → search_type="mmr" (MMR: diversity search)
-  → fetch_k=20 docs → chọn 10 docs đa dạng nhất
-       │
-       ▼
-[Context 1] "...Founded in July, 2002, VNU-IS..."
-[Context 2] "...VNU was established on 16 May 1906..."
-...
-[Context 10] "...Đại học Quốc gia Hà Nội (ĐHQGHN)..."
-       │
-       ▼
-create_prompt(question, contexts, template)
-  → Prompt:
-    <s>[INST] <<SYS>>
-    You are a direct answer bot...
-    Rules:
-    - Answer in SAME LANGUAGE
-    - Never explain reasoning
-    - ...
-    <</SYS>>
-    Information: [Context 1]...[Context 10]
-    Question: DHGQHN được thành lập khi nào?
-    Answer: [/INST]
-       │
-       ▼
-call_llm_api(prompt, config, history)
-  → _call_openrouter()
-  → POST https://openrouter.ai/api/v1/chat/completions
-  → model: openrouter/owl-alpha
-       │
-       ▼
-Response: "Đại học Quốc gia Hà Nội được thành lập vào ngày 16 tháng 5 năm 1906"
-```
-
----
-
-## 4. Các vấn đề hiện tại & hướng tối ưu
-
-### ❌ Vấn đề 1: Chroma DB chưa được tạo
-- **Nguyên nhân:** File `chroma_db/` không tồn tại trong project → chưa chạy `create_chroma_db.py`
-- **Hậu quả:** `retrieve_documents()` trả về 0 context → model trả lời mù quáng
-- **Fix:** `python create_chroma_db.py`
-
-### ❌ Vấn đề 2: Prompt format không phù hợp
-- **Loại:** Llama format `<s>[INST]...[/INST]>`
-- **Model dùng:** OWL Alpha (có thể không hỗ trợ tốt)
-- **Nên đổi sang:** ChatML format
-
-### ❌ Vấn đề 3: Retriever dùng similarity (đã fix MMR)
-- Trước: `similarity` → trùng context
-- Sau: `mmr` + `fetch_k=20` → context đa dạng hơn
-
-### ❌ Vấn đề 4: Model OWL Alpha yếu
-- Model nhẹ, instruction-following kém
-- Nên thử: `gpt-4o-mini`, `gemini-2.0-flash`
-
----
-
-## 5. File dependencies map
-
-```
-app.py
-  ├── src/__init__.py
-  │   ├── src/utils/config_loader.py  →  load_config()
-  │   ├── src/database/chroma_db.py   →  load_chroma_db()
-  │   ├── src/llm/api.py             →  call_llm_api(), create_prompt()
-  │   └── src/retriever/__init__.py
-  │       └── src/retriever/document_retriever.py  →  retrieve_documents()
-  └── config.yaml
-
-create_chroma_db.py
-  ├── src/__init__.py
-  │   ├── src/utils/config_loader.py  →  load_config()
-  │   ├── src/database/chroma_db.py   →  create_vector_db()
-  │   └── src/retriever/__init__.py
-  │       └── src/retriever/document_retriever.py  →  load_json_documents(), get_data_directories()
-  └── config.yaml
-  └── data/*/segmented/*.json
+### 3. 💡 Khuyến nghị về Prompt Template & Model
+* **Vấn đề:** Prompt template hiện tại đang sử dụng cấu trúc của Llama `<s>[INST] <<SYS>> ... <</SYS>> ... [/INST]`. Tuy nhiên, model đang được chọn làm mặc định trên OpenRouter lại là `openrouter/owl-alpha`.
+* **Khuyến nghị:** Model `owl-alpha` có thể không tuân thủ tốt cấu trúc chỉ dẫn này. Nên chuyển sang sử dụng định dạng ChatML phổ biến hoặc cấu hình các dòng model có chất lượng tốt hơn như `gemini-2.0-flash`, `gpt-4o-mini` để nâng cao chất lượng câu trả lời.

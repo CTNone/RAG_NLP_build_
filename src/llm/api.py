@@ -4,18 +4,73 @@ import urllib.error
 import urllib.request
 from typing import Any, List, Optional
 
-# from langchain.prompts import PromptTemplate
 from langchain_core.prompts import PromptTemplate
 
-try:
-    from together import Together
-except ImportError:
-    Together = None
+
+def _format_context(context: Any, fallback_id: int) -> str:
+    if not isinstance(context, dict):
+        return str(context)
+
+    citation_id = context.get("citation_id", fallback_id)
+    title = context.get("title") or "Untitled source"
+    section = context.get("section") or ""
+    source = context.get("url") or context.get("source") or "unknown source"
+    chunk_id = context.get("chunk_id", "")
+    content = context.get("content", "")
+    score = context.get("score")
+    score_text = f" | score={score:.4f}" if isinstance(score, (int, float)) else ""
+
+    header = f"[{citation_id}] {title}{score_text}"
+    if section:
+        header = f"{header} | {section}"
+
+    return (
+        f"{header}\n"
+        f"Source: {source}\n"
+        f"Chunk: {chunk_id}\n"
+        f"Content:\n{content}"
+    )
 
 
-def create_prompt(question: str, contexts: List[str], template: str) -> str:
-    """Tạo prompt từ câu hỏi và context"""
-    context_text = "".join(contexts)
+def _apply_context_budget(contexts: List[Any], config: Optional[dict]) -> List[Any]:
+    config = config or {}
+    ctx_cfg = config.get("context", {}) if isinstance(config.get("context", {}), dict) else {}
+    max_chars = int(ctx_cfg.get("max_chars", 6000))
+    max_chars_per_chunk = int(ctx_cfg.get("max_chars_per_chunk", 1500))
+
+    pruned: List[Any] = []
+    total = 0
+
+    for context in contexts:
+        if isinstance(context, dict):
+            content = (context.get("content") or "").strip()
+            if len(content) > max_chars_per_chunk:
+                content = content[:max_chars_per_chunk]
+            new_ctx = dict(context)
+            new_ctx["content"] = content
+        else:
+            new_ctx = context
+
+        rendered = _format_context(new_ctx, len(pruned) + 1)
+        if pruned and total + len(rendered) > max_chars:
+            break
+        pruned.append(new_ctx)
+        total += len(rendered)
+
+    return pruned
+
+
+def create_prompt(
+    question: str,
+    contexts: List[Any],
+    template: str,
+    config: Optional[dict] = None,
+) -> str:
+    """Create a prompt from question + retrieved contexts with citations."""
+    contexts = _apply_context_budget(contexts, config)
+    context_text = "\n\n---\n\n".join(
+        _format_context(context, i + 1) for i, context in enumerate(contexts)
+    )
     prompt_template = PromptTemplate.from_template(template)
     return prompt_template.format(context=context_text, question=question)
 
@@ -51,6 +106,9 @@ def _prepare_messages(history: Optional[List[Any]], prompt: str) -> list:
 
 def _call_openrouter(prompt: str, config: dict, history: Optional[List[Any]] = None) -> str:
     api_key = config["api"]["openrouter"]["token"]
+    if not api_key:
+        raise ValueError("OPENROUTER_API_KEY is not configured")
+
     model_id = config["api"]["openrouter"]["model_id"]
     api_url = "https://openrouter.ai/api/v1/chat/completions"
     headers = {
@@ -78,36 +136,25 @@ def _call_openrouter(prompt: str, config: dict, history: Optional[List[Any]] = N
             raw = response.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
         error_body = exc.read().decode("utf-8")
-        raise RuntimeError(f"OpenRouter request failed: {exc.code} {exc.reason} - {error_body}")
+        raise RuntimeError(
+            f"OpenRouter request failed: {exc.code} {exc.reason} - {error_body}"
+        )
     result = json.loads(raw)
     if not result or "choices" not in result or len(result["choices"]) == 0:
-        raise ValueError("Không nhận được phản hồi hợp lệ từ OpenRouter")
+        raise ValueError("No valid response from OpenRouter")
     return result["choices"][0]["message"]["content"]
 
 
-def _call_together(prompt: str, config: dict, history: Optional[List[Any]] = None) -> str:
-    if Together is None:
-        raise ImportError("Library 'together' is required for Together API provider")
-    os.environ["TOGETHER_API_KEY"] = config["api"]["together"]["token"]
-    client = Together()
-    model_id = config["api"]["together"]["model_id"]
-    messages = _prepare_messages(history, prompt)
-    response = client.chat.completions.create(
-        model=model_id,
-        messages=messages,
-        temperature=config["temperature"],
-        top_p=config["top_p"],
-        max_tokens=config["max_new_tokens"],
-    )
-    if response and hasattr(response, "choices") and len(response.choices) > 0:
-        return response.choices[0].message.content
-    raise ValueError("Không nhận được phản hồi hợp lệ từ Together API")
-
-
-def call_llm_api(prompt: str, config: dict, history: Optional[List[Any]] = None) -> str:
-    provider = config["api"].get("provider", "together").lower()
+def call_llm_api(
+    prompt: str,
+    config: dict,
+    history: Optional[List[Any]] = None,
+    stream: bool = False,
+) -> Any:
+    provider = config["api"].get("provider", "openrouter").lower()
     if provider == "openrouter":
+        if stream:
+            raise ValueError("Streaming is disabled in this build")
         return _call_openrouter(prompt, config, history)
-    if provider == "together":
-        return _call_together(prompt, config, history)
-    raise ValueError(f"Unknown API provider: {provider}")
+    raise ValueError(f"Unknown or unsupported API provider: {provider}")
+

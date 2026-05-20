@@ -40,10 +40,10 @@ def get_answer(question: str, db, config: Dict) -> str:
     """Lấy câu trả lời cho một câu hỏi"""
     try:
         # Truy xuất các đoạn văn bản liên quan
-        contexts = retrieve_documents(db, question, config["retriever_k"])
+        contexts = retrieve_documents(db, question, config["retriever_k"], config=config)
 
         # Tạo prompt
-        prompt = create_prompt(question, contexts, config["template"])
+        prompt = create_prompt(question, contexts, config["template"], config=config)
 
         # Gọi API LLM để lấy câu trả lời
         answer = call_llm_api(prompt, config, None)

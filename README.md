@@ -92,6 +92,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+For development (tests, evaluation, CSV tooling):
+```bash
+pip install -r requirements-dev.txt
+```
+
 ### 4. Thiết lập API tokens
 
 Xem phần [Cấu hình](#cấu-hình) bên dưới.
@@ -206,6 +211,20 @@ Question,Answer
 "VNU là gì?","VNU là viết tắt của Đại học Quốc gia Hà Nội..."
 ...
 ```
+
+### 4. Chạy evaluation (có golden answers)
+
+Golden answers (nếu có) đặt tại `data/test_goldens/` với cùng tên file như trong `data/test_questions/`.
+Xem định dạng tại `data/test_goldens/golden_format.md`.
+
+Chạy evaluation tất cả bộ câu hỏi:
+```bash
+python rag_eval.py --all
+```
+
+Kết quả:
+- `data/test_answers/eval/eval_<dataset>.json` (gồm contexts, citations, latency, pass)
+- `data/test_answers/eval/summary.json`
 
 ---
 
